@@ -1,0 +1,1 @@
+this folder contains common interface of the site;

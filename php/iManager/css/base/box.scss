@@ -1,0 +1,64 @@
+/*=========== Box Basic==============*/
+.box {
+    display: inline-block;  
+    width: 100%;  
+    min-height:60px;
+    position:relative;
+    background:white;
+    border: 1px solid #ccc;
+}
+
+/*=============== Dropshadow Module =============*/
+.drop-shadow:before,
+.drop-shadow:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    max-width: 150px;
+    height: 20%;
+    /*add box-shadow*/
+    @include box-shadow( 0 15px 10px rgba(125,125,125,0.8) );
+    /*add css3 transform*/
+    @include transform( rotate(-3deg) );
+}
+
+.drop-shadow:after {
+    right:10px;
+    left: auto;
+    @include transform( rotate(3deg) );
+ }
+ /*========== 右下角卷边 ==========*/  
+.rbwrinkle{  
+    @include border( 1px solid #ccc );
+    @include border-radius( 60px 60px 60px 0 / 5px 5px 60px 0 );  
+    @include box-shadow( 0px 0px 12px rgba(0, 0, 0, 0.3) ) ;  
+}
+
+.rbwrinkle:before{  
+    content:'';      
+    width: 25px;  
+    height: 20px;  
+    position: absolute;  
+    bottom:0;  
+    right:0;  
+    @include border-radius( 0 0 30px 0 );  
+    @include box-shadow( -2px -2px 5px rgba(0, 0, 0, 0.3) );  
+    @include transform(    rotate(-20deg) skew(-40deg,-3deg) translate(-13px,-13px) );                    
+}
+/*****************************************
+ *  theme
+ *****************************************/
+ .theme-a{
+    .box{
+        @include border( 1px solid #ccc );
+    }
+    .drop-shadow{
+        @include linear-gradient( top left, #fff, #fff 10%, #f3f3f3 );
+    }
+    .rbwrinkle:hover{
+        background: white;
+    }
+ }

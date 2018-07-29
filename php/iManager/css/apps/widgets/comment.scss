@@ -1,0 +1,30 @@
+/*=============评论相关==========*/
+.cmtWrapper h3{
+    margin-bottom:5px;
+}
+.cmtList{
+    margin:0px 20px 0 5px;
+}
+.cmtList li{
+    margin: 10px 0;
+    border:1px dotted #ccc;
+    overflow:hidden;
+    -webkit-border-radius:10px 10px;
+}
+.cmtPublisher{
+    margin:20px 20px 0 5px;
+}
+.taCmt{
+    width:100%;
+    height:200px;
+    background:white;
+    border:1px solid #ccc;
+    -webkit-border-radius: 5px 5px;
+    border:1px solid #ccc;
+}
+.pubBtn{
+    float:right;
+    margin-right:20px;
+    margin-top:10px;
+    padding:5px 15px;
+}

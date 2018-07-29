@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <base href="http://localhost/jqmobile/leng/"/>
+        <title>Self Organization</title> 
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/> 
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+        <script src="/js/base/frame.js"></script>
+        <script type="text/javascript" src="/js/base/jquery/tmpl.min.js"></script>
+    </head> 
+<body> 
+
+    <div data-role="page" id="login" data-title="Login">
+        <div data-role="header" data-position="fixed">
+            <h1>Self Organization</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <label for="logName">Account:</label>
+            <input type="text" id="logName"/>
+            <label for="logPasswd">Password:</label>
+            <input type="text" id="logPasswd"/>
+            <a href="#" data-role="button" data-theme="b" data-inline="true">Login</a>
+            <a href="#" data-role="button"  data-inline="true" data-navigation='home'>Reset</a>
+        </div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="home" data-title="Home">
+        <div data-role="header" data-position="fixed">
+            <h1>Home</h1>
+            <a href="#" data-icon="gear" class="ui-btn-right" data-navigation='home'>Home</a>
+        </div><!-- /header -->
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#detail">Inbox <span class="ui-li-count">12</span></a></li>
+                <li><a href="#detail">Outbox <span class="ui-li-count">0</span></a></li>
+                <li><a href="#detail">Drafts <span class="ui-li-count">4</span></a></li>
+                <li><a href="#detail">Sent <span class="ui-li-count">328</span></a></li>
+                <li><a href="#detail">Trash <span class="ui-li-count">62</span></a></li>
+            </ul>
+        </div><!-- /content -->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="controlgroup" data-type="horizontal">
+                <a href="#" data-role="button" data-icon="home"  data-theme="a" data-inline="true" data-navigation='home'>Home</a>
+                <a href="#" data-role="button" data-icon="edit" data-theme="a" data-inline="true" data-navigation='admin'>Admin</a>
+                <a href="#" data-role="button" data-icon="gear" data-theme="a" data-inline="true" data-navigation='settings'>Setting</a>
+            </div>
+        </div>
+    </div><!-- /page -->
+
+    <div data-role="page" id="detail" data-title="Detail">
+        <div data-role="header" data-position="fixed">
+            <h1>Detail</h1>
+            <a href="#home" data-role="button">Home</a>
+        </div><!-- /header -->
+        <div data-role="content">   
+            <ul data-role="listview" data-theme="d" data-divider-theme="d">
+                <li data-role="list-divider">Friday, October 8, 2010 <span class="ui-li-count">2</span></li>
+                <li><a href="index.html">
+                    
+                        <h3>Stephen Weber</h3>
+                        <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                        <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
+                        <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                </a></li>
+            </ul>
+        </div><!-- /content -->
+        <div data-role="footer" data-position="fixed">
+            login
+        </div>
+    </div><!-- /page -->
+
+    <div data-role="page" id="settings" data-title="Settings" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+            <h1>Settings</h1>
+        </div><!-- /header -->
+        <div data-role="content">   
+        </div><!-- /content -->
+    </div><!-- /page -->
+    <script src="/js/jqmobile/leng/entry.js"></script>
+</body>
+</html>

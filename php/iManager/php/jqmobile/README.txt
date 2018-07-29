@@ -1,0 +1,1 @@
+this folder contains applications for the mobile equipments based on jquery mobile library.

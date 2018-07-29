@@ -1,0 +1,411 @@
+/*全局变量*/
+/**
+ * 盒阴影
+ * @param{list} $shadow e.g. [ x y blur color, ... ]
+ */
+/**
+ * 文字阴影
+ * @param{list}  $shadow e.g. [ x y blur color, ... ]
+ */
+/**
+ * 线性渐变
+ * @param{list} $gradient e.g. [ <pos[e.g. left]|angle deg>, color, color, ...]
+ */
+/**
+ * 重复线性渐变
+ */
+/**
+ * 径向渐变
+ * @param{list} $gradient e.g. [ <bg-position[e.g. bottom left]| angle deg>?, <shape[e.g. circle]|size?,color,color,... ]
+ */
+/**
+ * 重复径向渐变
+ */
+/**
+ * 边框
+ * @param {list} $top 上边框，或所有边框
+ * @param {list} $right 右边框
+ * @param {list} $bottom 下边框
+ * @param {list} $left 左边框
+ */
+/**
+ * 圆角
+ * @param {list}$radius e.g. [<length>{1,4} [/ <length>{1,4} ]]
+ * @comment：4对值分别修饰 上左、上右，下右、下左四角，如果没有4对，则对角共享一对；
+ */
+/**
+ * 背景剪裁区域
+ * @param $clip e.g. [padding-box | boder-box | margin-box]
+ */
+/**
+ * 变换
+ */
+/*=========== Box Basic==============*/
+.box {
+  display: inline-block;
+  width: 100%;
+  min-height: 60px;
+  position: relative;
+  background: white; }
+
+/*=============== Dropshadow Module =============*/
+.drop-shadow:before,
+.drop-shadow:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  max-width: 150px;
+  height: 20%;
+  /*add box-shadow*/
+  -moz-box-shadow: 0 15px 10px rgba(125, 125, 125, 0.8);
+  -webkit-box-shadow: 0 15px 10px rgba(125, 125, 125, 0.8);
+  -o-box-shadow: 0 15px 10px rgba(125, 125, 125, 0.8);
+  box-shadow: 0 15px 10px rgba(125, 125, 125, 0.8);
+  /*add css3 transform*/
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg); }
+
+.drop-shadow:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg); }
+
+/*========== 右下角卷边 ==========*/
+.rbwrinkle {
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 60px 60px 60px 0/5px 5px 60px 0;
+  -moz-border-radius: 60px 60px 60px 0/5px 5px 60px 0;
+  -o-border-radius: 60px 60px 60px 0/5px 5px 60px 0;
+  border-radius: 60px 60px 60px 0/5px 5px 60px 0;
+  -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3); }
+
+.rbwrinkle:before {
+  content: '';
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-border-radius: 0 0 30px 0;
+  -moz-border-radius: 0 0 30px 0;
+  -o-border-radius: 0 0 30px 0;
+  border-radius: 0 0 30px 0;
+  -moz-box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transform: rotate(-20deg) skew(-40deg, -3deg) translate(-13px, -13px);
+  -moz-transform: rotate(-20deg) skew(-40deg, -3deg) translate(-13px, -13px);
+  -o-transform: rotate(-20deg) skew(-40deg, -3deg) translate(-13px, -13px);
+  transform: rotate(-20deg) skew(-40deg, -3deg) translate(-13px, -13px); }
+
+/*****************************************
+ *  theme
+ *****************************************/
+.theme-a .box {
+  border: 1px solid #cccccc; }
+.theme-a .drop-shadow {
+  background-image: -webkit-linear-gradient(top left, white, white 10%, #f3f3f3);
+  background-image: -moz-linear-gradient(top left, white, white 10%, #f3f3f3);
+  background-image: -o-linear-gradient(top left, white, white 10%, #f3f3f3);
+  background-image: linear-gradient(top left, white, white 10%, #f3f3f3); }
+.theme-a .rbwrinkle:hover {
+  background: white; }
+
+.button {
+  -moz-box-shadow: 2 2 5 #aaaaaa;
+  -webkit-box-shadow: 2 2 5 #aaaaaa;
+  -o-box-shadow: 2 2 5 #aaaaaa;
+  box-shadow: 2 2 5 #aaaaaa; }
+
+/*默认追加样式*/
+.def-vmenu dd {
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 30px 0px; }
+
+.def-vmenu dd:hover {
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5); }
+
+.def-vmenu ul li {
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 30px 30px 0px 30px/0px 60px 0px 30px; }
+
+.def-vmenu ul li:hover {
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5); }
+
+/* 去除一些默认样式 */
+body {
+  margin: 0px;
+  padding: 0px; }
+
+a {
+  text-decoration: none; }
+
+h1, h1 * {
+  font-size: 18px; }
+
+h2 {
+  font-size: 16px; }
+
+h3, h3 * {
+  font-size: 14px; }
+
+.b {
+  display: block;
+  width: 100%; }
+
+.c {
+  clear: both; }
+
+.m0 {
+  margin: 0px; }
+
+.m5 {
+  margin: 5px; }
+
+.m10 {
+  margin: 10px; }
+
+.p0 {
+  padding: 0px; }
+
+.p10 {
+  padding: 10px; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.mr5 {
+  margin-right: 5px; }
+
+.mr10 {
+  margin-right: 10px; }
+
+.mr30 {
+  margin-right: 30px; }
+
+.mt10 {
+  margin-top: 10px; }
+
+.mb5 {
+  margin-bottom: 5px; }
+
+.tac {
+  text-align: center; }
+
+.bgGray {
+  background-color: #eee; }
+
+.comList {
+  list-style: none;
+  padding: 0px; }
+
+.oa {
+  overflow: auto; }
+
+.dn {
+  display: none; }
+
+.ww {
+  word-wrap: break-word; }
+
+.contentWrapper {
+  margin: 20px; }
+
+.editorWrapper {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ccc;
+  overflow: scroll; }
+
+.editor {
+  width: 100%;
+  height: 100%; }
+
+.btn {
+  position: relative;
+  display: block;
+  padding: 0 18px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: -2px -2px 7px rgba(0, 0, 0, 0.5); }
+
+.btn:hover {
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+  top: -2px;
+  left: -2px; }
+
+.wordWrapper ul, .wordWrapper ol {
+  padding-left: 20px; }
+
+/* 框架页面样式 */
+/*==========================顶部工具条==================*/
+.hdTrigger {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 101;
+  margin: 0 15px 0px 10px;
+  width: 25px;
+  height: 34px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  line-height: 35px;
+  border: 1px dotted #ccc; }
+
+.headContent {
+  display: block;
+  position: fixed;
+  height: 35px;
+  width: 100%;
+  z-index: 100;
+  background: rgba(200, 200, 200, 0.5); }
+
+.loginBar {
+  width: 465px;
+  margin: 5px 0;
+  line-height: 25px;
+  margin-right: 50px; }
+  .loginBar input {
+    margin: 2px 5px;
+    background: transparent; }
+  .loginBar button {
+    height: 20px;
+    line-height: 20px;
+    margin-top: 2px; }
+
+.logoutBar {
+  margin-right: 50px; }
+
+/*==========================顶部工具条==================*/
+/*==========================主面板======================*/
+#main {
+  display: block;
+  width: 980px;
+  margin: 0px auto; }
+
+/*=========================顶部横幅=====================*/
+.mt-theme {
+  display: block;
+  width: 100%;
+  height: 100px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 100px;
+  color: #f1dd26; }
+
+/*=========================顶部横幅=====================*/
+/*=========================主题内容=====================*/
+.content {
+  display: block;
+  width: 100%;
+  min-height: 780px; }
+
+/*======================左侧菜单栏=====================*/
+.l-p {
+  float: left;
+  position: fixed;
+  width: 180px;
+  z-index: 10; }
+
+/*左侧首部信息框*/
+.rd-p {
+  display: block;
+  width: 100%;
+  height: 160px; }
+
+/*==================菜单 列表==============*/
+/*垂直菜单*/
+.ver-menu {
+  position: relative; }
+  .ver-menu dd {
+    display: block;
+    position: relative;
+    margin: 10px 20px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: black;
+    font-size: 16px; }
+    .ver-menu dd a {
+      display: block;
+      color: black;
+      width: 100%; }
+    .ver-menu dd:hover ul {
+      display: block; }
+  .ver-menu ul {
+    display: none;
+    position: absolute;
+    left: 140px;
+    top: -5px;
+    overflow: auto;
+    z-index: 100;
+    padding: 0px;
+    margin: 0px; }
+    .ver-menu ul li {
+      background: white;
+      margin: 5px; }
+    .ver-menu ul a {
+      width: 120px; }
+
+/*==================菜单 列表==============*/
+/*======================左侧菜单栏======================*/
+/*=====================右侧内容面板=====================*/
+.r-p {
+  float: right;
+  width: 780px;
+  /*ie6 bug*/
+  position: relative; }
+
+/*=====================正文===============*/
+/*正文列表*/
+.mcontent-panel > ul {
+  padding: 0px;
+  margin: 0px; }
+
+/*=====================正文===============*/
+/*=====================右侧内容面板=====================*/
+/*===================底部=================*/
+#ft {
+  display: block;
+  width: 100%;
+  height: 100px; }
+
+/*===================底部=================*/
+/*=========================主题内容=====================*/
+/*==========================主面板======================*/
+/* 弹出页 */
+.pop-page-wrapper {
+  display: block;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  min-height: 480px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000; }
+
+.pop-page {
+  display: block;
+  width: 980px;
+  height: 100%;
+  margin: 0px auto;
+  background: white; }

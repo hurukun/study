@@ -1,0 +1,5 @@
+/*默认追加样式*/
+.def-vmenu dd{box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);border-radius:30px 0px;}
+.def-vmenu dd:hover{box-shadow: -2px 2px 5px rgba(0,0,0,.5);}
+.def-vmenu ul li{box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);border-radius:30px 30px 0px 30px/0px 60px 0px 30px;}
+.def-vmenu ul li:hover{box-shadow: -2px -2px 5px rgba(0,0,0,.5);}

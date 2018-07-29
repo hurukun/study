@@ -1,0 +1,32 @@
+{
+	"folders":
+	[
+		{
+			"path": "__demos"
+		},
+		{
+			"path": "__trash"
+		},
+		{
+			"path": "css"
+		},
+		{
+			"path": "flash"
+		},
+		{
+			"path": "js"
+		},
+		{
+			"path": "node"
+		},
+		{
+			"path": "php"
+		},
+		{
+			"path": "resource"
+		},
+		{
+			"path": "system"
+		}
+	]
+}

@@ -1,0 +1,221 @@
+/*全局变量*/
+/**
+ * 盒阴影
+ * @param{list} $shadow e.g. [ x y blur color, ... ]
+ */
+/**
+ * 文字阴影
+ * @param{list}  $shadow e.g. [ x y blur color, ... ]
+ */
+/**
+ * 线性渐变
+ * @param{list} $gradient e.g. [ <pos[e.g. left]|angle deg>, color, color, ...]
+ */
+/**
+ * 重复线性渐变
+ */
+/**
+ * 径向渐变
+ * @param{list} $gradient e.g. [ <bg-position[e.g. bottom left]| angle deg>?, <shape[e.g. circle]|size?,color,color,... ]
+ */
+/**
+ * 重复径向渐变
+ */
+/**
+ * 边框
+ * @param {list} $top 上边框，或所有边框
+ * @param {list} $right 右边框
+ * @param {list} $bottom 下边框
+ * @param {list} $left 左边框
+ */
+/**
+ * 圆角
+ * @param {list}$radius e.g. [<length>{1,4} [/ <length>{1,4} ]]
+ * @comment：4对值分别修饰 上左、上右，下右、下左四角，如果没有4对，则对角共享一对；
+ */
+/**
+ * 背景剪裁区域
+ * @param $clip e.g. [padding-box | boder-box | margin-box]
+ */
+/**
+ * 变换
+ */
+/*正文列表每项*/
+.mcontent-panel > ul > li {
+  display: block;
+  min-height: 100px;
+  margin-bottom: 15px;
+  color: black; }
+
+.absTitle {
+  font-size: 22px;
+  color: purple; }
+
+.absEdit {
+  float: right; }
+
+.box:hover .itemHead {
+  background: #f5f5f5; }
+
+.box:hover .itemFooter li {
+  border-radius: 10px;
+  background: #f0f0f0; }
+
+.wordWrap {
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 150px; }
+
+/*关键字 列表*/
+.hTabList dt label {
+  margin-left: 5px;
+  color: orange; }
+
+.hTabList dd {
+  float: left; }
+
+.hTabList li a, .hTabList dd a {
+  height: 25px;
+  line-height: 25px;
+  font-size: 13px;
+  margin-left: 5px; }
+
+.hTabList li *, .hTabList dd * {
+  margin: 5px 5px 0 0; }
+
+.hTabList {
+  overflow: auto; }
+
+.hTabList li {
+  float: left;
+  margin-right: 5px; }
+
+.itemList li {
+  display: block;
+  margin: 10px; }
+
+.itemHead {
+  padding: 10px;
+  border-bottom: 1px solid #ccc; }
+
+.itemContent {
+  padding: 10px 10px 0 10px; }
+
+/* 容器 子 li 均浮动 */
+.itemFooter {
+  display: block;
+  overflow: auto;
+  padding: 10px 60px 10px 10px; }
+
+.itemFooter ul li {
+  float: left;
+  display: inline; }
+
+.itemFooter li * {
+  display: inline; }
+
+/*ie6 bug*/
+.bTrigger {
+  display: inline;
+  cursor: pointer; }
+
+/*弹出层*/
+.article {
+  margin: 0px 80px; }
+
+.artTitle {
+  margin: 10px 0px;
+  font-size: 25px; }
+
+.pubInfo {
+  margin: 0px 0px 5px; }
+
+.artAppend {
+  height: 20px; }
+
+/*=============评论相关==========*/
+.cmtWrapper h3 {
+  margin-bottom: 5px; }
+
+.cmtList {
+  margin: 0px 20px 0 5px; }
+
+.cmtList li {
+  margin: 10px 0;
+  border: 1px dotted #ccc;
+  overflow: hidden;
+  -webkit-border-radius: 10px 10px; }
+
+.cmtPublisher {
+  margin: 20px 20px 0 5px; }
+
+.taCmt {
+  width: 100%;
+  height: 200px;
+  background: white;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px 5px;
+  border: 1px solid #ccc; }
+
+.pubBtn {
+  float: right;
+  margin-right: 20px;
+  margin-top: 10px;
+  padding: 5px 15px; }
+
+/*=======================翻页控件=================*/
+a.fy {
+  border: 1px solid #B9B7B7;
+  text-decoration: none;
+  padding: 3px 7px;
+  margin: 1px;
+  font-family: Arial;
+  background: #fff;
+  color: #8B8A8A; }
+
+a.fy2 {
+  border: 1px solid #B9B7B7;
+  text-decoration: none;
+  padding: 3px 7px;
+  margin: 1px;
+  font-family: Arial;
+  background: #8B8A8A;
+  color: #fff;
+  font-weight: bold; }
+
+/*=======================翻页控件=================*/
+/*======================富文本 编辑器================*/
+.edtToolButton {
+  min-width: 20px;
+  display: inline-block; }
+
+.edtWrapper {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ccc;
+  overflow: scroll; }
+
+.clrPanel {
+  position: absolute;
+  width: 155px;
+  border: 1px solid #ccc; }
+
+.clrBlock {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ccc;
+  margin: 0px 2px 2px 0px; }
+
+.ffPanel {
+  position: absolute;
+  width: 130px;
+  border: 1px solid #ccc; }
+
+.ffItem {
+  width: 120px;
+  height: 18px;
+  line-height: 18px;
+  margin: 0 5px;
+  color: black; }
+
+/*=======================富文本 编辑器=================*/

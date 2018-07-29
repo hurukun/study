@@ -1,0 +1,183 @@
+
+.tm_scenes {list-style:none;overflow:hidden;width:14400px;height:480px;padding:0px;margin:0px;position:relative;}
+.tm_scene{float:left;display:block;width:800px;height:480px;background:#ccb;_background:#ccb;}
+.tm_mask{width:100%;height:100%;_height:2000px;background:#000;_background:#000;filter:alpha(opacity=60);opacity:.6;position:absolute;z-index:1000;left:0;top:0}
+.widget{position:absolute;}
+
+.fr{float:right;}
+.fsn {font-size:18px;color:#FF5B00;font-family:STHeiti,SimHei;}
+.fsl{font-size:18px;color:#FF5B00;font-family:STHeiti,SimHei;}
+.fsnum{font-size:19px;color:#FF5B00;font-weight:bold;}
+.dyn_fill{float:left;text-align:center;overflow:hidden;height:25px;line-height:25px;}
+/**
+ * 各个动画页
+ */
+.pbkg_cover{background:url(/css/i2/5thanni/tmm_cover.png)  0px 0px no-repeat;}
+.tm_cover_logo{width:150px;height:150px;left:67px;top:54px;}
+.tm_cover_name{width:200px;height:50px;line-height:50px;color:#b05555;font-size:36px;font-family:STHeiti,SimHei;}
+
+.pbkg_0{background-color:rgb(255,226,198);}
+.p0_char_m{width:135px;height:310px;background:url(/css/i2/5thanni/tmm_00_char_m.png)  -15px -5px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_00_char_m.png)  -15px -5px no-repeat;}
+.p0_char_wm{width:145px;height:315px;background:url(/css/i2/5thanni/tmm_00_char_wm.png)  -7px -7px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_00_char_wm.png)  -7px -7px no-repeat;}
+.p0_char_star{width:85px;height:88px;background:url(/css/i2/5thanni/tmm_00_char_star.png) -5px -5px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_00_char_star.png) -5px -5px no-repeat;}
+.p0_cloud_0{width:95px;height:60px;background:url(/css/i2/5thanni/tmm_00_cloud_1.png) -2px -4px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_00_cloud_1.png) -2px -4px no-repeat;}
+.p0_cloud_1{width:85px;height:52px;background:url(/css/i2/5thanni/tmm_00_cloud_2.png) -6px -1px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_00_cloud_2.png) -6px -1px no-repeat;}
+.p0_text{width:360px;height:185px;background:url(/css/i2/5thanni/tmm_00_text.png) -6px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_00_text.png) -6px 0px no-repeat;}
+.p0_text .time{position:absolute;top:65px;}
+.p0_text .pdes{position:absolute;top:120px;}
+
+.pbkg_1{background-color:rgb(193,255,249);}
+.p1_char_m{width:118px;height:270px;background:url(/css/i2/5thanni/tmm_01_char_m.png)  -5px -5px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_01_char_m.png)  -5px -5px no-repeat;}
+.p1_char_wm{width:145px;height:315px;background:url(/css/i2/5thanni/tmm_01_char_wm.png)  -7px -7px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_01_char_wm.png)  -7px -7px no-repeat;}
+.p1_line{width:200px;height:50px;background:url(/css/i2/5thanni/tmm_01_line.png) 0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_01_line.png) 0 0 no-repeat;}
+.p1_cloud_0{width:80px;height:48px;background:url(/css/i2/5thanni/tmm_01_cloud_0.png) -4px -4px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_01_cloud_0.png) -4px -4px no-repeat;}
+.p1_cloud_1{width:85px;height:50px;background:url(/css/i2/5thanni/tmm_01_cloud_1.png) -5px -3px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_01_cloud_1.png) -5px -3px no-repeat;}
+.p1_text{width:300px;height:135px;background:url(/css/i2/5thanni/tmm_01_text.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_01_text.png) 0px 0px no-repeat;}
+.p1_text .name{position:relative;top:108px;left:30px;}
+
+.pbkg_2,.pbkg_13{background-color:rgb(255,227,198);}
+.p2_char_m{width:167px;height:168px;z-index:10;background:url(/css/i2/5thanni/tmm_02_char_m.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_02_char_m.png)  0 0 no-repeat;}
+.p2_char_wm{width:169px;height:169px;z-index:10;background:url(/css/i2/5thanni/tmm_02_char_wm.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_02_char_wm.png)  0 0 no-repeat;}
+.p2_char_frd0{width:169px;height:109px;background:url(/css/i2/5thanni/tmm_02_char_frd0.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_02_char_frd0.png)  0 0 no-repeat;}
+.p2_char_frd1{width:168px;height:160px;background:url(/css/i2/5thanni/tmm_02_char_frd1.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_02_char_frd1.png)  0 0 no-repeat;}
+.p2_char_frd2{width:150px;height:125px;background:url(/css/i2/5thanni/tmm_02_char_frd2.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_02_char_frd2.png)  0 0 no-repeat;}
+.p2_char_frd3{width:150px;height:160px;background:url(/css/i2/5thanni/tmm_02_char_frd3.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_02_char_frd3.png)  0 0 no-repeat;}
+.p2_text{width:260px;height:165px;background:url(/css/i2/5thanni/tmm_02_text.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_02_text.png) 0px 0px no-repeat;}
+.p2_text .num{position:relative;top:83px;left:8px;width:118px;}
+
+.pbkg_3{background-color:rgb(236,214,255);}
+.p3_msg{width:140px;height:130px;background:url(/css/i2/5thanni/tmm_03_msg.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_03_msg.png)  0 0 no-repeat;}
+.p3_camera{width:140px;height:140px;background:url(/css/i2/5thanni/tmm_03_camera.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_03_camera.png)  0 0 no-repeat;}
+.p3_heart{width:140px;height:135px;background:url(/css/i2/5thanni/tmm_03_heart.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_03_heart.png)  0 0 no-repeat;}
+.p3_text_0{width:490px;height:130px;background:url(/css/i2/5thanni/tmm_03_text_0.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_03_text_0.png) 0px 0px no-repeat;}
+.p3_text_0 .day{position:relative;top:73px;left:104px;width:108px;height:25px;}
+.p3_text_1{width:525px;height:130px;background:url(/css/i2/5thanni/tmm_03_text_1.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_03_text_1.png) 0px 0px no-repeat;}
+.p3_text_1 .r_num{position:relative;top:75px;left:55px;width:96px;height:25px;}
+.p3_text_1 .p_num{position:relative;top:75px;left:120px;width:80px;height:25px;}
+.p3_text_1 .d_num{position:relative;top:75px;left:185px;width:90px;height:25px;}
+
+.pbkg_4{background:url(/css/i2/5thanni/tmm_04_bkg.png) 0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_04_bkg.png) 0 0 no-repeat;}
+.p4_line{width:725px;height:6px;background:url(/css/i2/5thanni/tmm_04_line.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_04_line.png)  0 0 no-repeat;}
+.p4_char_m{width:100px;height:220px;background:url(/css/i2/5thanni/tmm_04_char_m.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_04_char_m.png)  0 0 no-repeat;}
+.p4_char_wm{width:105px;height:215px;background:url(/css/i2/5thanni/tmm_04_char_wm.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_04_char_wm.png)  0 0 no-repeat;}
+.p4_char_m1{width:100px;height:220px;background:url(/css/i2/5thanni/tmm_04_char_m1.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_04_char_m1.png)  0 0 no-repeat;}
+.p4_cloud{width:84px;height:50px;background:url(/css/i2/5thanni/tmm_04_cloud.png)  -4px -2px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_04_cloud.png)  -4px -2px no-repeat;}
+.p4_text{width:520px;height:80px;background:url(/css/i2/5thanni/tmm_04_text.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_04_text.png) 0px 0px no-repeat;}
+
+.pbkg_5{background-color:rgb(253,239,205);}
+.p5_char_m{width:124px;height:250px;z-index:10;background:url(/css/i2/5thanni/tmm_05_char_m.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_05_char_m.png)  0 0 no-repeat;}
+.p5_char_wm{width:124px;height:250px;z-index:10;background:url(/css/i2/5thanni/tmm_05_char_wm.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_05_char_wm.png)  0 0 no-repeat;}
+.p5_book{width:186px;height:198px;background:url(/css/i2/5thanni/tmm_05_book.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_05_book.png)  0 0 no-repeat;}
+.p5_cloud_0{width:100px;height:60px;background:url(/css/i2/5thanni/tmm_05_cloud_0.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_05_cloud_0.png)  0 0 no-repeat;}
+.p5_cloud_1{width:90px;height:55px;background:url(/css/i2/5thanni/tmm_05_cloud_1.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_05_cloud_1.png)  0 0 no-repeat;}
+.p5_text_0{width:240px;height:150px;background:url(/css/i2/5thanni/tmm_05_text_0.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_05_text_0.png) 0px 0px no-repeat;}
+.p5_text_1{width:240px;height:150px;background:url(/css/i2/5thanni/tmm_05_text_1.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_05_text_1.png) 0px 0px no-repeat;}
+.p5_text_0 .rp_num,.p5_text_1 .rp_num{position:relative;top:50px;left:0px;width:105px;}
+.p5_text_0 .m_num{position:relative;top:97px;left:55px;width:46px;}
+
+.pbkg_6{background-color:rgb(218,240,254);}
+.p6_char_m{width:124px;height:250px;z-index:10;background:url(/css/i2/5thanni/tmm_06_char_m.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_06_char_m.png)  0 0 no-repeat;}
+.p6_char_wm{width:124px;height:250px;z-index:10;background:url(/css/i2/5thanni/tmm_06_char_wm.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_06_char_wm.png)  0 0 no-repeat;}
+.p6_gift{width:160px;height:110px;background:url(/css/i2/5thanni/tmm_06_gift.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_06_gift.png)  0 0 no-repeat;}
+.p6_text{width:285px;height:125px;background:url(/css/i2/5thanni/tmm_06_text.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_06_text.png) 0px 0px no-repeat;}
+.p6_text .g_num{position:relative;top:46px;left:98px;width:72px;}
+.p6_text .p_num{position:relative;top:72px;left:-14px;width:65px;}
+
+.pbkg_7{background-color:rgb(255,229,226);}
+.p7_char_m{width:124px;height:250px;z-index:10;background:url(/css/i2/5thanni/tmm_07_char_m.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_07_char_m.png)  0 0 no-repeat;}
+.p7_char_wm{width:124px;height:260px;z-index:10;background:url(/css/i2/5thanni/tmm_07_char_wm.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_07_char_wm.png)  0 0 no-repeat;}
+.p7_char_m1{width:124px;height:250px;z-index:10;background:url(/css/i2/5thanni/tmm_07_char_m1.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_07_char_m1.png)  0 0 no-repeat;}
+.p7_vs{width:60px;height:60px;background:url(/css/i2/5thanni/tmm_07_vs.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_07_vs.png)  0 0 no-repeat;}
+.p7_cloud_0{width:100px;height:60px;background:url(/css/i2/5thanni/tmm_07_cloud_0.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_07_cloud_0.png)  0 0 no-repeat;}
+.p7_cloud_1{width:100px;height:60px;background:url(/css/i2/5thanni/tmm_07_cloud_1.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_07_cloud_1.png)  0 0 no-repeat;}
+.p7_text{width:310px;height:125px;background:url(/css/i2/5thanni/tmm_07_text.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_07_text.png) 0px 0px no-repeat;}
+.p7_text .r_num{position:relative;top:47px;left:78px;width:100px;}
+.p7_text .p_num{position:relative;top:73px;left:-2px;width:75px;}
+
+.pbkg_8{background-color:rgb(253,239,205);}
+.p8_char_m{width:124px;height:250px;z-index:10;background:url(/css/i2/5thanni/tmm_08_char_m.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_08_char_m.png)  0 0 no-repeat;}
+.p8_char_wm{width:124px;height:260px;z-index:10;background:url(/css/i2/5thanni/tmm_08_char_wm.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_08_char_wm.png)  0 0 no-repeat;}
+.p8_cloud_0{width:95px;height:80px;background:url(/css/i2/5thanni/tmm_08_cloud_0.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_08_cloud_0.png)  0 0 no-repeat;}
+.p8_vbox{width:90px;height:95px;background:url(/css/i2/5thanni/tmm_08_vbox.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_08_vbox.png)  0 0 no-repeat;}
+.p8_text{width:315px;height:100px;background:url(/css/i2/5thanni/tmm_08_text.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_08_text.png) 0px 0px no-repeat;}
+.p8_text .v_num{position:relative;top:47px;left:78px;width:98px;}
+.p8_text .p_num{position:relative;top:73px;left:-39px;width:94px;}
+
+.pbkg_9{background-color:rgb(222,255,219);}
+.p9_char_m{width:150px;height:250px;z-index:10;background:url(/css/i2/5thanni/tmm_09_char_m.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_09_char_m.png)  0 0 no-repeat;}
+.p9_char_wm{width:150px;height:260px;z-index:10;background:url(/css/i2/5thanni/tmm_09_char_wm.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_09_char_wm.png)  0 0 no-repeat;}
+.p9_group{width:365px;height:290px;background:url(/css/i2/5thanni/tmm_09_group.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_09_group.png)  0 0 no-repeat;}
+.p9_text{width:270px;height:150px;background:url(/css/i2/5thanni/tmm_09_text.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_09_text.png) 0px 0px no-repeat;}
+.p9_text .num{position:relative;top:124px;left:78px;width:95px;}
+
+.pbkg_10{background:url(/css/i2/5thanni/tmm_10_bkg.png) 0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_10_bkg.png) 0 0 no-repeat;}
+.p10_pmark{width:720px;height:220px;background:url(/css/i2/5thanni/tmm_10_pmark.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_10_pmark.png)  0 0 no-repeat;}
+.p10_car{width:235px;height:160px;z-index:10;background:url(/css/i2/5thanni/tmm_10_car.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_10_car.png)  0 0 no-repeat;}
+.p10_text_0{width:315px;height:100px;background:url(/css/i2/5thanni/tmm_10_text_0.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_10_text_0.png) 0px 0px no-repeat;}
+.p10_text_1{width:315px;height:100px;background:url(/css/i2/5thanni/tmm_10_text_1.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_10_text_1.png) 0px 0px no-repeat;}
+.p10_text_2{width:315px;height:100px;background:url(/css/i2/5thanni/tmm_10_text_2.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_10_text_2.png) 0px 0px no-repeat;}
+.p10_text_1 .name{position:relative;top:72px;left:145px;width:100px;}
+.p10_text_2 .count{position:relative;top:74px;left:60px;width:77px;}
+
+.pbkg_11,.pbkg_12{background-color:rgb(211,230,248);}
+.p11_tree{width:80px;height:90px;background:url(/css/i2/5thanni/tmm_11_tree.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_11_tree.png)  0 0 no-repeat;}
+.p11_carrot{width:80px;height:90px;background:url(/css/i2/5thanni/tmm_11_carrot.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_11_carrot.png)  0 0 no-repeat;}
+.p11_strawberry{width:80px;height:90px;background:url(/css/i2/5thanni/tmm_11_strawberry.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_11_strawberry.png)  0 0 no-repeat;}
+.p11_pepper{width:80px;height:90px;background:url(/css/i2/5thanni/tmm_11_pepper.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_11_pepper.png)  0 0 no-repeat;}
+.p11_grass{width:80px;height:90px;background:url(/css/i2/5thanni/tmm_11_grass.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_11_grass.png)  0 0 no-repeat;}
+.p11_watermelon{width:80px;height:90px;background:url(/css/i2/5thanni/tmm_11_watermelon.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_11_watermelon.png)  0 0 no-repeat;}
+.p11_eggplant{width:80px;height:90px;background:url(/css/i2/5thanni/tmm_11_eggplant.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_11_eggplant.png)  0 0 no-repeat;}
+.p11_text{width:545px;height:120px;background:url(/css/i2/5thanni/tmm_11_text.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_11_text.png) 0px 0px no-repeat;}
+
+.p12_house_0{width:200px;height:180px;z-index:10;background:url(/css/i2/5thanni/tmm_12_house_0.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_12_house_0.png)  0 0 no-repeat;}
+.p12_house_1{width:145px;height:150px;background:url(/css/i2/5thanni/tmm_12_house_1.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_12_house_1.png)  0 0 no-repeat;}
+.p12_house_2{width:115px;height:105px;background:url(/css/i2/5thanni/tmm_12_house_2.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_12_house_2.png)  0 0 no-repeat;}
+.p12_house_3{width:80px;height:90px;z-index:10;background:url(/css/i2/5thanni/tmm_12_house_3.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_12_house_3.png)  0 0 no-repeat;}
+.p12_cloud_0{width:100px;height:65px;background:url(/css/i2/5thanni/tmm_05_cloud_0.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_05_cloud_0.png)  0 0 no-repeat;}
+.p12_cloud_1{width:95px;height:60px;background:url(/css/i2/5thanni/tmm_12_cloud_1.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_12_cloud_1.png)  0 0 no-repeat;}
+.p12_text{width:620px;height:110px;background:url(/css/i2/5thanni/tmm_12_text.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_12_text.png) 0px 0px no-repeat;}
+.p12_text .name_l{position:relative;top:45px;left:0px;width:200px;}
+.p12_text .name_m{position:relative;top:45px;left:20px;width:200px;}
+
+
+.p13_light{width:100px;height:140px;background:url(/css/i2/5thanni/tmm_13_light.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_13_light.png)  0 0 no-repeat;}
+.p13_table{width:375px;height:200px;z-index:10;background:url(/css/i2/5thanni/tmm_13_table.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_13_table.png)  0 0 no-repeat;}
+.p13_chair_0{width:75px;height:180px;background:url(/css/i2/5thanni/tmm_13_chair_0.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_13_chair_0.png)  0 0 no-repeat;}
+.p13_chair_1{width:75px;height:180px;background:url(/css/i2/5thanni/tmm_13_chair_1.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_13_chair_1.png)  0 0 no-repeat;}
+.p13_tip{width:150px;height:40px;background:url(/css/i2/5thanni/tmm_13_tip.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_13_tip.png)  0 0 no-repeat;}
+.p13_text{width:600px;height:75px;background:url(/css/i2/5thanni/tmm_13_text.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_13_text.png) 0px 0px no-repeat;}
+.p13_text .name{position:relative;top:29px;left:65px;width:167px;}
+
+.pbkg_14{background-color:rgb(221,254,205);}
+.p14_char_m{width:255px;height:265px;z-index:10;background:url(/css/i2/5thanni/tmm_14_char_m.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_14_char_m.png)  0 0 no-repeat;}
+.p14_char_wm{width:255px;height:265px;z-index:10;background:url(/css/i2/5thanni/tmm_14_char_wm.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_14_char_wm.png)  0 0 no-repeat;}
+.p14_city{width:265px;height:80px;background:url(/css/i2/5thanni/tmm_14_city.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_14_city.png)  0 0 no-repeat;}
+.p14_cloud_0{width:100px;height:140px;background:url(/css/i2/5thanni/tmm_01_cloud_0.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_01_cloud_0.png)  0 0 no-repeat;}
+.p14_cloud_1{width:100px;height:140px;background:url(/css/i2/5thanni/tmm_01_cloud_1.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_01_cloud_1.png)  0 0 no-repeat;}
+.p14_text{width:290px;height:155px;background:url(/css/i2/5thanni/tmm_14_text.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_14_text.png) 0px 0px no-repeat;}
+
+.pbkg_15{background-color:rgb(217,253,228);}
+.p15_char_m{width:120px;height:265px;z-index:10;background:url(/css/i2/5thanni/tmm_15_char_m.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_15_char_m.png)  0 0 no-repeat;}
+.p15_char_wm{width:120px;height:265px;z-index:10;background:url(/css/i2/5thanni/tmm_15_char_wm.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_15_char_wm.png)  0 0 no-repeat;}
+.p15_app_list{width:365px;height:330px;background:url(/css/i2/5thanni/tmm_15_list.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_15_list.png)  0 0 no-repeat;}
+.p15_text{width:310px;height:100px;background:url(/css/i2/5thanni/tmm_15_text.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_15_text.png) 0px 0px no-repeat;}
+
+.pbkg_16{background-color:rgb(254,247,218);}
+.p16_char_m{width:130px;height:265px;z-index:10;background:url(/css/i2/5thanni/tmm_16_char_m.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_16_char_m.png)  0 0 no-repeat;}
+.p16_char_wm{width:130px;height:265px;z-index:10;background:url(/css/i2/5thanni/tmm_16_char_wm.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_16_char_wm.png)  0 0 no-repeat;}
+.p16_friends{width:400px;height:235px;background:url(/css/i2/5thanni/tmm_16_friends.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_16_friends.png)  0 0 no-repeat;}
+.p16_text{width:290px;height:175px;background:url(/css/i2/5thanni/tmm_16_text.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_16_text.png) 0px 0px no-repeat;}
+/**
+ * 底部条
+ */
+.bar_wrapper{position:absolute;left:50px;top:455px;height:12px;width:700px;overflow:hidden;}
+.bar{position:relative;width:800px;}
+.bar_item{float:left;height:12px;}
+.bar_star{width:12px;height:12px;background:url(/css/i2/5thanni/tmm_bar_star.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_bar_star.png) 0px 0px no-repeat;}
+.bar_g_star{width:12px;height:12px;background:url(/css/i2/5thanni/tmm_bar_star_gray.png) 0px 0px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_bar_star_gray.png) 0px 0px no-repeat;}
+.bar_line{background:url(/css/i2/5thanni/tmm_bar_line.png) 0px 5px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_bar_line.png) 0px 5px no-repeat;}
+.bar_g_line{background:url(/css/i2/5thanni/tmm_bar_line_gray.png) 0px 5px no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_bar_line_gray.png) 0px 5px no-repeat;}
+
+.tm_close{position:absolute;left:750px;top:25px;width:27px;height:27px;background:url(/css/i2/5thanni/tmm_btn_close.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_btn_close.png)  0 0 no-repeat;}
+.tm_close:hover{background:url(/css/i2/5thanni/tmm_btn_close_hov.png)  0 0 no-repeat;_background:url(/css/i2/5thanni_ie6/tmm_btn_close_hov.png)  0 0 no-repeat;}
+#fifth_tm_audio{display:block;width:0px;height:0px;overflow:hidden;}

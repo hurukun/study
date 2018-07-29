@@ -1,0 +1,86 @@
+/*全局变量*/
+$fsz-default: 14px;
+$fsz-h1: 18px;
+$fsz-h2: 16px;
+$fsz-h3: 14px;
+
+/**
+ * 盒阴影
+ * @param{list} $shadow e.g. [ x y blur color, ... ]
+ */
+@mixin box-shadow( $shadows... ){
+    -moz-box-shadow: $shadows;
+    -webkit-box-shadow: $shadows;
+    -o-box-shadow: $shadows;
+    box-shadow: $shadows;
+}
+/**
+ * 文字阴影
+ * @param{list}  $shadow e.g. [ x y blur color, ... ]
+ */
+@mixin text-shadow( $shadows... ){
+    -moz-text-shadow: $shadows;
+    -webkit-text-shadow: $shadows;
+    -o-text-shadow: $shadows;
+    text-shadow: $shadows;
+}
+/**
+ * 线性渐变
+ * @param{list} $gradient e.g. [ <pos[e.g. left]|angle deg>, color, color, ...]
+ */
+@mixin linear-gradient( $gradient... ){
+    background-image:-webkit-linear-gradient( $gradient );
+    background-image:-moz-linear-gradient( $gradient );
+    background-image:-o-linear-gradient( $gradient );
+    background-image: linear-gradient( $gradient );
+}
+/**
+ * 重复线性渐变
+ */
+@mixin repeating-linear-gradient($gradient... ){
+    background-image:-webkit-repeating-linear-gradient( $gradient );
+    background-image:-moz-repeating-linear-gradient( $gradient );
+    background-image:-o-repeating-linear-gradient( $gradient );
+    background-image: repeating-linear-gradient( $gradient );
+}
+/**
+ * 径向渐变
+ * @param{list} $gradient e.g. [ <bg-position[e.g. bottom left]| angle deg>?, <shape[e.g. circle]|size?,color,color,... ]
+ */
+@mixin radial-gradient($gradient... ){
+    background-image:-webkit-radial-gradient($gradient );
+    background-image: -moz-radial-gradient($gradient );
+    background-image: -o-radial-gradient($gradient );
+    background-image: radial-gradient($gradient );
+}
+/**
+ * 重复径向渐变
+ */
+@mixin repeating-radial-gradient($gradient... ){
+    background-image:-webkit-repeating-radial-gradient($gradient );
+    background-image: -moz-repeating-radial-gradient($gradient );
+    background-image: -o-repeating-radial-gradient($gradient );
+    background-image: repeating-radial-gradient($gradient );
+}
+/**
+ * 圆角
+ * @param $radius e.g. [<length>{1,4} [/ <length>{1,4} ]]
+ * @comment：4对值分别修饰 上左、上右，下右、下左四角，如果没有4对，则对角共享一对；
+ */
+@mixin border-radius($radius...){
+    -webkit-border-radius:$radius;
+    -moz-border-radius:$radius;
+    -o-border-radius:$radius;
+    border-radius:$radius;
+}
+/**
+ * 背景剪裁区域
+ * @param $clip e.g. [padding-box | boder-box | margin-box]
+ */
+@mixin background-clip( $clip ){
+    -webkit-background-clip: $clip;
+    -moz-background-clip: $clip;
+    -o-background-clip: $clip;
+    background-clip: $clip;
+}
+    

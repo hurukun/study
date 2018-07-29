@@ -1,0 +1,402 @@
+<html>
+    <head>
+        <meta charset="utf-8" /> 
+        <title>BonBon Buttons - Sweet CSS3 buttons</title> 
+        <style type="text/css"> 
+            html { 
+            background-color: #ddd; 
+            font: 62.5%/1 "Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif; 
+            } 
+            body { padding: 100px; } 
+            #wrapper { text-align: center; } 
+            /*It appears that the Pictos Font resets the line-height of the icon.. so if you are using them, delete the line below. */ 
+            .icon:before { line-height: .7em; } 
+        </style> 
+        <style tyle="text/css">
+            body {
+            padding:0;
+            margin:0;
+            font:1em/1.4 Cambria, Georgia, sans-serif;
+            color:#333;
+            background:#fff;
+            }
+            ul {
+            list-style:none;
+            padding:0;
+            margin:0;
+            overflow:hidden;
+            font:0.875em/1 Arial, sans-serif;
+            }
+            ul li {
+            float:left;
+            width:66px;
+            height:66px;
+            margin:20px 20px 0 0;
+            }
+            ul li a {
+            display:block;
+            width:64px;
+            height:64px;
+            overflow:hidden;
+            border:1px solid trasparent;
+            line-height:64px;
+            ;
+            text-decoration:none;
+            text-shadow:0 -1px 0 rgba(0,0,0,0.5);
+            border-radius:5px;
+            -webkit-border-radius:5px;
+            -moz-border-radius:5px;
+            }
+            ul li a:hover, ul li a:focus, ul li a:active {
+            opacity:0.8;
+            border-color:#000;
+            }
+            .facebook a {
+            position:relative;
+            border-color:#3c5a98;
+            text-transform:lowercase;
+            text-indent:34px;
+            letter-spacing:10px;
+            font-weight:bold;
+            font-size:64px;
+            line-height:66px;
+            color:#fff;
+            background:#3c5a98;
+            -moz-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            -webkit-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            box-shadow:0 0 4px rgba(0,0,0,0.4);
+            }
+            .twitter a {
+            position:relative;
+            border-color:#a8eaec;
+            text-transform:lowercase;
+            text-indent:20px;
+            letter-spacing:40px;
+            font:bold 60px/1 Tahoma, Geneva, sans-serif;
+            line-height:60px;
+            color:#76ddf8;
+            background:#daf6f7;
+            text-shadow:3px 3px 1px #fff, -3px -3px 1px #fff, 3px -3px 1px #fff, -3px 3px 1px #fff;
+            -moz-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            -webkit-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            box-shadow:0 0 4px rgba(0,0,0,0.4);
+            background:-webkit-gradient(linear, left top, left bottom, from(#dbf7f8), to(#88e1e6));
+            background:-moz-linear-gradient(top, #dbf7f8, #88e1e6);
+            background:-o-linear-gradient(top, #dbf7f8, #88e1e6);
+            background:linear-gradient(top, #dbf7f8, #88e1e6);
+            filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr="#dbf7f8", endColorstr="#88e1e6");
+            }
+            .rss a {
+            position:relative;
+            width:60px;
+            padding:0 2px;
+            border-color:#ea6635;
+            text-transform:lowercase;
+            text-indent:-186px;
+            font-size:64px;
+            font-weight:bold;
+            color:#fff;
+            background:#e36443;
+            -moz-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            -webkit-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            box-shadow:0 0 4px rgba(0,0,0,0.4);
+            background:-webkit-gradient(linear, left top, left bottom, from(#f19242), to(#e36443));
+            filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr="#f19242", endColorstr="#e36443");
+            }
+            .rss a:before {
+            content:"\00a0";
+            position:absolute;
+            bottom:10px;
+            left:10px;
+            width:12px;
+            height:12px;
+            background:#ffffff;
+            -moz-border-radius:12px;
+            -webkit-border-radius:12px;
+            border-radius:12px; 
+            }
+            .rss a:after {
+            content:"\00a0";
+            position:absolute;
+            bottom:10px;
+            left:10px;
+            width:22px;
+            height:22px;
+            border-style:double;
+            border-width:24px 24px 0 0;
+            border-color:#fff;
+            -moz-border-radius:0 50px 0 0;
+            -webkit-border-top-right-radius:50px;
+            border-radius:0 50px 0 0;
+            }
+            .flickr a {
+            position:relative;
+            border-color:#d2d2d2;
+            text-indent:-9000px;
+            font-size:108px;
+            font-weight:bold;
+            color:#fff;
+            background:#fff;
+            -moz-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            -webkit-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            box-shadow:0 0 4px rgba(0,0,0,0.4);
+            background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#d2d2d2));
+            background:-moz-linear-gradient(top, #fff, #d2d2d2);
+            filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr="#ffffff", endColorstr="#d2d2d2");
+            }
+            .flickr a:before {
+            content:"\00a0";
+            position:absolute;
+            top:50%;
+            left:30%;
+            width:20px;
+            height:20px;
+            margin:-10px 0 0 -10px;
+            background:#085ec5;
+            border:1px solid #003c84;
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+            border-radius: 20px;
+            background:-webkit-gradient(linear, left top, left bottom, from(#005cc6), to(#003d83));
+            background:-moz-linear-gradient(top, #005cc6, #003d83);
+            background:-o-linear-gradient(top, #005cc6, #003d83);
+            background:linear-gradient(top, #005cc6, #003d83);
+            filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr="#005cc6", endColorstr="#003d83");
+            }
+            .flickr a:after {
+            content:"\00a0";
+            position:absolute;
+            top:50%;
+            right:30%;
+            width:20px;
+            height:20px;
+            margin:-10px -10px 0 0;
+            border:1px solid #ba0060;
+            background:#fd1e93;
+            -moz-border-radius:20px;
+            -webkit-border-radius:20px;
+            border-radius:20px;
+            background:-webkit-gradient(linear, left top, left bottom, from(#fd1e93), to(#cb026c));
+            background:-moz-linear-gradient(top, #fd1e93, #cb062c);
+            filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr="#fd1e93", endColorstr="#cb026c");
+            }
+            .delicious a {
+            position:relative;
+            border-color:#d2d2d2;
+            text-align:center;
+            font-size:108px;
+            font-weight:bold;
+            color:#fff;
+            background:#fff;
+            text-indent:-9999px;
+            -moz-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            -webkit-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            box-shadow:0 0 4px rgba(0,0,0,0.4);
+            background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#d1d1d1));
+            background:-moz-linear-gradient(top, #fff, #d1d1d1);
+            filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr="#ffffff", endColorstr="#d1d1d1");
+            }
+            .delicious a:before {
+            content:"\00a0";
+            position:absolute;
+            top:0;
+            right:0;
+            width:30px;
+            height:30px;
+            border:1px solid #0060ce;
+            background:#085ec5;
+            -moz-border-radius-topright:4px;
+            -webkit-border-top-right-radius:4px;
+            border-top-right-radius:4px;
+            background:-webkit-gradient(linear, left top, left bottom, from(#0060ce), to(#003b7f));
+            background:-moz-linear-gradient(top, #0060ce, #003b7f);
+            }
+            .delicious a:after {
+            content:"\00a0";
+            position:absolute;
+            left:0;
+            bottom:0;
+            width:30px;
+            height:30px;
+            border:1px solid #000;
+            background:#000;
+            -moz-border-radius-bottomleft:4px;
+            -webkit-border-bottom-left-radius:4px;
+            background:-webkit-gradient(linear, left top, left bottom, from(#212121), to(#000000));
+            background:-moz-linear-gradient(top, #212121, #000000);
+            filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr="#212121", endColorstr="#000000");
+            }
+            .linkedin a {
+            position:relative;
+            width:60px;
+            overflow:hidden;
+            padding:0 2px;
+            border-color:#185c80;
+            text-transform:lowercase;
+            text-indent:-185px;
+            font-size:64px;
+            font-weight:bold;
+            color:#fff;
+            background:#0c6596;
+            -moz-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            -webkit-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            box-shadow:0 0 4px rgba(0,0,0,0.4);
+            background:-webkit-gradient(linear, left top, left bottom, from(#5babcb), to(#0c6596));
+            background:-moz-linear-gradient(top, #5babcb, #0c6596);
+            filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr="#5babcb", endColorstr="#0c6596");
+            }
+            .google a {
+            position:relative;
+            border-color:#26478d;
+            text-transform:lowercase;
+            text-indent:16px;
+            letter-spacing:40px;
+            font: 65px/44px Georgia, Times New Roman, Times, serif;
+            color:#fff;
+            background:#1e3c7f;
+            -moz-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            -webkit-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            box-shadow:0 0 4px rgba(0,0,0,0.4);
+            background:-webkit-gradient(linear, left top, left bottom, from(#447aec), to(#1e3c7f));
+            background:-moz-linear-gradient(top, #447aec, #1e3c7f);
+            filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr="#447aec", endColorstr="#1e3c7f");
+            }
+            .orkut a {
+            position:relative;
+            border-color:#b4c4dd;
+            text-indent:-9000px;
+            font-size:108px;
+            color:#b62b91;
+            background:#fff;
+            -moz-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            -webkit-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            box-shadow:0 0 4px rgba(0,0,0,0.4);
+            background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#ceddf6));
+            background:-moz-linear-gradient(top, #fff, #ceddf6);
+            filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr="#ffffff", endColorstr="#ceddf6");
+            }
+            .orkut a:before {
+            content:"\00a0";
+            position:absolute;
+            top:50%;
+            left:50%;
+            width:40px;
+            height:40px;
+            border:1px solid #b0699e;
+            margin:-21px 0 0 -21px;
+            background:#d779c0;
+            -moz-border-radius:40px;
+            -webkit-border-radius:40px;
+            border-radius:40px;
+            -moz-box-shadow:0 0 2px rgba(0,0,0,0.6);
+            -webkit-box-shadow:0 0 2px rgba(0,0,0,0.6);
+            box-shadow:0 0 2px rgba(0,0,0,0.6);
+            }
+            .orkut a:after {
+            content:"\00a0";
+            position:absolute;
+            top:50%;
+            left:50%;
+            height:26px;
+            width:26px;
+            margin:-13px 0 0 -13px;
+            background:#ffffff;
+            -moz-border-radius:26px;
+            -webkit-border-radius:26px;
+            border-radius:26px;
+            -moz-box-shadow: 0 0 2px rgba(0,0,0,0.6);
+            -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.6);
+            box-shadow: 0 0 2px rgba(0,0,0,0.6);
+            background:-webkit-gradient(linear, left top, left bottom, from(#eff4fc), to(#dce6f8));
+            background:-moz-linear-gradient(top, #eff4fc, #dce6f8);
+            filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr="#eff4fc", endColorstr="#dce6f8");
+            }
+            .technorati a {
+            position:relative;
+            border-color:#266f12;
+            text-indent:-9999px;
+            font-size:108px;
+            color:#b62b91;
+            background:#086b04;
+            -moz-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            -webkit-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            box-shadow:0 0 4px rgba(0,0,0,0.4);
+            background:-webkit-gradient(linear, left top, left bottom, from(#a3d679), to(#086b04));
+            background:-moz-linear-gradient(top, #a3d679, #086b04);
+            filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr="#a3d679", endColorstr="#086b04");
+            }
+            .technorati a:before {
+            content:"\00a0";
+            position:absolute;
+            top:5px;
+            right:-5px;
+            width:40px;
+            height:25px;
+            border:8px solid #f5f5f5;
+            -moz-border-radius:45px/35px;
+            -webkit-border-top-left-radius:45px 35px;
+            -webkit-border-top-right-radius:45px 35px;
+            -webkit-border-bottom-right-radius:45px 35px;
+            -webkit-border-bottom-left-radius:45px 35px;
+            border-radius:45px/35px;
+            -moz-box-shadow:0 0 2px rgba(0,0,0,0.6);
+            -webkit-box-shadow:0 0 2px rgba(0,0,0,0.6);
+            box-shadow:0 0 2px rgba(0,0,0,0.6);
+            }
+            .technorati a:after {
+            content:"\00a0";
+            position:absolute;
+            top:40px;
+            left:20px;
+            width:0;
+            height:0;
+            border-width:0 0 18px 13px;
+            border-style:solid;
+            border-color: transparent #f5f5f5;
+            }
+            .netvibes a {
+            position:relative;
+            border-color:#0c5f0c;
+            text-align:center;
+            text-indent:-9000px;
+            font-size:178px;
+            font-weight:bold;
+            color:#fff;
+            background:#138210;
+            -moz-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            -webkit-box-shadow:0 0 4px rgba(0,0,0,0.4);
+            box-shadow:0 0 4px rgba(0,0,0,0.4);
+            background:-webkit-gradient(linear, left top, left bottom, from(#68db21), to(#138210));
+            background:-moz-linear-gradient(top, #68db21, #138210);
+            filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr="#68db21", endColorstr="#138210");
+            }
+            .netvibes a:after {
+            content:"+";
+            position:absolute;
+            left:0;
+            top:0;
+            width:64px;
+            text-indent:0;
+            text-align:center;
+            font-size:88px;
+            color:#fff;
+            }
+        </style>
+    </head>
+      <body>
+            <div class="content">
+                  <ul>
+                        <li class="facebook"><a href="#non" title="Share on Facebook">Facebook</a></li>
+                        <li class="twitter"><a href="#non" title="Share on Twitter">Twitter</a></li>
+                        <li class="rss"><a href="#non" title="Subscribe to the RSS feed">RSS</a></li>
+                        <li class="flickr"><a href="#non" title="Share on Flickr">Flickr</a></li>
+                        <li class="delicious"><a href="#non" title="Bookmark on Delicious">Delicious</a></li>
+                        <li class="linkedin"><a href="#non" title="Share on LinkedIn">LinkedIn</a></li>
+                        <li class="google"><a href="#non" title="Bookmark with Google">Google</a></li>
+                        <li class="orkut"><a href="#non" title="Share on Orkut">Orkut</a></li>
+                        <li class="technorati"><a href="#non" title="Add to Technorati">Technorati</a></li>
+                        <li class="netvibes"><a href="#non" title="Add to NetVibes">NetVibes</a></li>
+                  </ul>
+            </div>
+      </body>
+</html>

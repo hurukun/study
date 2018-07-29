@@ -1,0 +1,1 @@
+this folder contains the blog application related files.

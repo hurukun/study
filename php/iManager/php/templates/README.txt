@@ -1,0 +1,1 @@
+this folder contains smarty template files for the site;

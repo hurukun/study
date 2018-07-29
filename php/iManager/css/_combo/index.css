@@ -1,0 +1,142 @@
+/*全局变量*/
+/**
+ * 盒阴影
+ * @param{list} $shadow e.g. [ x y blur color, ... ]
+ */
+/**
+ * 文字阴影
+ * @param{list}  $shadow e.g. [ x y blur color, ... ]
+ */
+/**
+ * 线性渐变
+ * @param{list} $gradient e.g. [ <pos[e.g. left]|angle deg>, color, color, ...]
+ */
+/**
+ * 重复线性渐变
+ */
+/**
+ * 径向渐变
+ * @param{list} $gradient e.g. [ <bg-position[e.g. bottom left]| angle deg>?, <shape[e.g. circle]|size?,color,color,... ]
+ */
+/**
+ * 重复径向渐变
+ */
+/**
+ * 边框
+ * @param {list} $top 上边框，或所有边框
+ * @param {list} $right 右边框
+ * @param {list} $bottom 下边框
+ * @param {list} $left 左边框
+ */
+/**
+ * 圆角
+ * @param {list}$radius e.g. [<length>{1,4} [/ <length>{1,4} ]]
+ * @comment：4对值分别修饰 上左、上右，下右、下左四角，如果没有4对，则对角共享一对；
+ */
+/**
+ * 背景剪裁区域
+ * @param $clip e.g. [padding-box | boder-box | margin-box]
+ */
+/**
+ * 变换
+ */
+#main {
+  margin-top: 0px; }
+
+#calender {
+  width: 80%;
+  height: 100px;
+  display: block;
+  margin: 0 auto; }
+
+#calender ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: auto; }
+
+#calender li {
+  float: left; }
+
+.calCard {
+  min-width: 150px;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0px 10px 0px 10px; }
+
+.calDate {
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  line-height: 35px; }
+
+.calDay {
+  font-size: 45px;
+  color: orange; }
+
+.calEvent {
+  width: 100%;
+  height: 65px; }
+
+#appPages {
+  width: 100%;
+  min-height: 500px; }
+
+/* Page switcher buttons. */
+.pageSwitcher {
+  -webkit-transition: width 150ms, right 150ms, background-color 150ms;
+  background-color: transparent;
+  border: none;
+  bottom: 0;
+  font-size: 40px;
+  margin: 0;
+  max-width: 150px;
+  min-width: 90px;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  z-index: 5; }
+
+.pageSwitcher {
+  color: rgba(0, 0, 0, 0.5);
+  /* COLOR_NTP_TEXT */ }
+
+.pageSwitcher:hover,
+.pageSwitcher:focus,
+.pageSwitcher.drag-target {
+  background-color: rgba(0, 0, 0, 0.06);
+  /* COLOR_NTP_TEXT */ }
+
+#appPages {
+  overflow: hidden; }
+
+#appPages ul {
+  list-style: none;
+  width: 9999px;
+  overflow: auto;
+  margin: 10px 0px;
+  padding: 0px;
+  position: relative; }
+
+#appPages li {
+  float: left;
+  width: 1000px;
+  height: 500px; }
+
+.app {
+  float: left;
+  margin: 10px;
+  width: 120px;
+  height: 105px; }
+
+.appIcon {
+  width: 100%;
+  height: 80px;
+  border: solid 1px #aaa;
+  border-radius: 5px; }
+
+.appName {
+  margin: 0px;
+  padding: 0px;
+  text-align: center; }

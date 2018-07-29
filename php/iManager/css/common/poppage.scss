@@ -1,0 +1,10 @@
+/* 弹出页 */
+.pop-page-wrapper{
+    display:block;position:fixed;left:0px;top:0px;width:100%;min-height:480px;
+    background: rgba(0,0,0,.5);
+    z-index:1000;
+}
+.pop-page{
+    display:block;width:980px;height:100%;margin:0px auto;
+    background: white;
+}

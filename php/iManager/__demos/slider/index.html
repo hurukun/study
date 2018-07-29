@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.advancedSlider.min.js"></script>
+    <script type="text/javascript" src="js/playerUtility.js"></script>
+    <script>
+      $(document).ready(function(){
+            /**
+             * 第一个参数：图片地址
+             * 第二个参数：大标题；
+             * 第三个参数：小标题；
+             * 第四个参数：点击后的跳转地址；
+             */
+             setCard("img/cn_tax_hkbudget_750_270213.jpg", "2013/14&#24180;&#24230;&#39321;&#28207;&#36130;&#25919;&#39044;&#31639;&#26696;", "德勤评论及税务措施概要", "/view/zh_CN/cn/services/tax/2acc10707011d310VgnVCM3000003456f70aRCRD.htm")  
+
+           setCard("img/cn_ers_bulletin5cover_300113.jpg", "&#12298;&#24503;&#21220;&#20225;&#19994;&#39118;&#38505;&#12299;&#19995;&#20070;&#31532;&#20116;&#36753;", "内部审计: 公司免疫系统，提升企业价值", "/view/zh_CN/cn/services/ers/b7378b27aaa8c310VgnVCM3000003456f70aRCRD.htm")  
+           setCard("img/cn_audit_IPOIntReOl2012_750_130712.jpg", "&#39321;&#28207;&#21644;&#20013;&#22269;&#22823;&#38470;IPO&#24063;&#22330;", "2012年回顾及2013年展望", "/view/zh_CN/cn/services/audit/9a9199a9aba1c310VgnVCM3000003456f70aRCRD.htm")  
+           setCard("img/cn_ap_2013Q1Dbriefs_070113.jpg", "&#27934;&#23519;&#20808;&#26426;: &#24503;&#21220;&#22312;&#32447;&#20122;&#22826;&#21306;&#32593;&#32476;&#35762;&#24231;", "2013年1月至3月讲座指南", "http://www.deloitte.com/ap/dbriefs")  
+           setCard("img/cn_audit_2012hkfrsmodelfs_750_201212.jpg", "2012&#24180;&#39321;&#28207;&#36130;&#21153;&#25253;&#21578;&#20934;&#21017;", "年度财务报表范例", "/view/zh_CN/cn/services/audit/f5e000fa50e0c310VgnVCM1000003256f70aRCRD.htm")  
+           createSlider();
+
+           $('.slider').advancedSlider({width: 750, height: 311,
+              slideshow: true, 
+              slideshowDelay: 5000, 
+              slideshowDirection: 'next', 
+              slideshowControls: false,  
+              lightbox:true, 
+              fadeNavigationArrows: false,
+              linkTarget:'_parent',
+              effectType:'slide',
+              slideStartPosition:'right',
+              horizontalSlices:'1',
+              verticalSlices:'1',
+              slideMask: true,
+              pauseSlideshowOnHover:true,
+              captionShowEffect:'fade',
+              captionShowEffectDuration:250, 
+              lightboxDefaultHeight:330, 
+              lightboxDefaultWidth:490,   
+              thumbnailsType:'tooltip',
+              thumbnailTooltip:true,
+              thumbnailSync:true, 
+              captionHeight: 70, 
+              captionLeft: 30,
+              slideProperties:{
+            }});
+  });
+   </script>
+ 
+    <link rel="stylesheet" type="text/css" href="css/advanced-slider-base.css" media="screen"/>
+  </head>
+  <body>
+    <div id="divSliderItems" class="slider"></div>
+  </body>
+</html>

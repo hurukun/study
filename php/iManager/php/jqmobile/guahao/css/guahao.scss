@@ -1,0 +1,93 @@
+@import "base";
+
+@mixin fixed-bar(){
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+/**
+ * 主题相关
+ * @type {[type]}
+ */
+$theme-bgcolor: #111;
+$theme-fgcolor: #fff;
+$theme-border-color: #333;
+
+.dn{display:none;}
+/**
+ * 头部
+ */
+[data-role="header"]{
+    @include linear-gradient( top, #3c3c3c, $theme-bgcolor );
+    color: $theme-fgcolor;
+    boder: 1px solid $theme-border-color;
+    text-shadow: 0 -1px 0 #000;
+}
+/**
+ * 固定头部
+ */
+[data-position="fixed"]{
+    top: 0;
+    @include fixed-bar;
+}
+/**
+ * 头部标题
+ */
+[data-role="header"] h1{
+    min-height: 1.1em;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    margin: .6em 30% .8em;
+    padding: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: 0!important;
+}
+/**
+ * 头部按钮
+ */
+[data-role="header"] a{
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    top: 4px;
+    z-index: 10;
+    @include box-shadow( 0 1px 0 rgba(255,255,255,.3) );
+    color: $theme-fgcolor;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    @include background-clip( padding-box );
+    @include border-radius( 1em );
+    @include linear-gradient( top, #444, #2d2d2d ); 
+    boder: 1px solid $theme-border-color;
+    text-decoration:none;
+}
+[data-role="header"] a.l{
+    left:5px;
+}
+[data-role="header"] a.r{
+    right:5px;
+}
+[data-role="header"] a .text{
+    @include border-radius( inherit );
+    padding: .6em 20px;
+    font-size: 12.5px;
+    border-top: 1px solid #fff;
+    border-color: rgba(255,255,255,.3);
+}
+.ui-content{
+    
+}
+.ui-footer{
+    
+}
+.ui-footer-fixed{
+    bottom: 0;
+    @include fixed-bar;
+}

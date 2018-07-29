@@ -1,0 +1,132 @@
+/*全局变量*/
+/**
+ * 盒阴影
+ * @param{list} $shadow e.g. [ x y blur color, ... ]
+ */
+/**
+ * 文字阴影
+ * @param{list}  $shadow e.g. [ x y blur color, ... ]
+ */
+/**
+ * 线性渐变
+ * @param{list} $gradient e.g. [ <pos[e.g. left]|angle deg>, color, color, ...]
+ */
+/**
+ * 重复线性渐变
+ */
+/**
+ * 径向渐变
+ * @param{list} $gradient e.g. [ <bg-position[e.g. bottom left]| angle deg>?, <shape[e.g. circle]|size?,color,color,... ]
+ */
+/**
+ * 重复径向渐变
+ */
+/**
+ * 圆角
+ * @param $radius e.g. [<length>{1,4} [/ <length>{1,4} ]]
+ * @comment：4对值分别修饰 上左、上右，下右、下左四角，如果没有4对，则对角共享一对；
+ */
+/**
+ * 背景剪裁区域
+ * @param $clip e.g. [padding-box | boder-box | margin-box]
+ */
+/**
+ * 主题相关
+ * @type {[type]}
+ */
+.dn {
+  display: none; }
+
+/**
+ * 头部
+ */
+[data-role="header"] {
+  background-image: -webkit-linear-gradient(top, #3c3c3c, #111111);
+  background-image: -moz-linear-gradient(top, #3c3c3c, #111111);
+  background-image: -o-linear-gradient(top, #3c3c3c, #111111);
+  background-image: linear-gradient(top, #3c3c3c, #111111);
+  color: white;
+  boder: 1px solid #333333;
+  text-shadow: 0 -1px 0 #000; }
+
+/**
+ * 固定头部
+ */
+[data-position="fixed"] {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1000; }
+
+/**
+ * 头部标题
+ */
+[data-role="header"] h1 {
+  min-height: 1.1em;
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  margin: .6em 30% .8em;
+  padding: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  outline: 0 !important; }
+
+/**
+ * 头部按钮
+ */
+[data-role="header"] a {
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+  top: 4px;
+  z-index: 10;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  -o-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  -o-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+  background-image: -webkit-linear-gradient(top, #444444, #2d2d2d);
+  background-image: -moz-linear-gradient(top, #444444, #2d2d2d);
+  background-image: -o-linear-gradient(top, #444444, #2d2d2d);
+  background-image: linear-gradient(top, #444444, #2d2d2d);
+  boder: 1px solid #333333;
+  text-decoration: none; }
+
+[data-role="header"] a.l {
+  left: 5px; }
+
+[data-role="header"] a.r {
+  right: 5px; }
+
+[data-role="header"] a .text {
+  -webkit-border-radius: inherit;
+  -moz-border-radius: inherit;
+  -o-border-radius: inherit;
+  border-radius: inherit;
+  padding: .6em 20px;
+  font-size: 12.5px;
+  border-top: 1px solid #fff;
+  border-color: rgba(255, 255, 255, 0.3); }
+
+.ui-footer-fixed {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1000; }

@@ -1,0 +1,1 @@
+this folder contains common classes that may be used in other php files.

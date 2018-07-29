@@ -1,0 +1,662 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"name",
+				"namespace	@namespace"
+			],
+			[
+				"modules",
+				"moduleList"
+			],
+			[
+				"wait",
+				"waitList"
+			],
+			[
+				"wai",
+				"waitList"
+			],
+			[
+				"rep",
+				"repeat-y"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"back",
+				"background	background-color: rgb"
+			],
+			[
+				"he",
+				"header	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/JSLint/JSLint.sublime-build",
+	"command_palette":
+	{
+		"height": 227.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"enablepa",
+				"Package Control: Enable Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: en",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control: di",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: dl",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Library/WebServer/Documents/js/base/frame.js",
+		"/Library/WebServer/Documents/js/apps/example/ADeferredObject.js",
+		"/Library/WebServer/Documents/js/apps/example/ADOMEvents.js",
+		"/Library/WebServer/Documents/js/core/card/CardFactory.js",
+		"/Library/WebServer/Documents/js/apps/example/ACard.js",
+		"/Library/WebServer/Documents/global.php",
+		"/Library/WebServer/Documents/php/include/common/CC_Uploader.php",
+		"/Library/WebServer/Documents/php/example/uploader/ajax_uploader.php",
+		"/Library/WebServer/Documents/js/apps/example/ADragDrop.js",
+		"/Library/WebServer/Documents/js/apps/example/AFloatStage.js",
+		"/Users/hurukun/Desktop/work/Job_Hunting/profile/social_relationship.txt",
+		"/Users/hurukun/Desktop/record/javascript_summary.md",
+		"/Library/WebServer/Documents/php/templates/widgets/card.tpl",
+		"/Library/WebServer/Documents/php/interface/aj_usercard.php",
+		"/Users/hurukun/Desktop/record/cpp.md",
+		"/Users/hurukun/Desktop/Knowledge/programming_language/javascript/jquery-1.7.2.js",
+		"/Library/WebServer/Documents/js/apps/example/ACrossDomain.js",
+		"/Library/WebServer/Documents/php/example/jscrossdomain/cdhash.html",
+		"/Library/WebServer/Documents/php/example/jscrossdomain/cdwinname.html",
+		"/Users/hurukun/Develop/dev/img/htdocs/compass/articles/经验/MarkdownEditing：Sublime Text 2 的 Markdown 利器.md",
+		"/Users/hurukun/Develop/dev/img/htdocs/compass/articles/经验/script标签的defer与async属性.md",
+		"/Users/hurukun/Develop/dev/img/htdocs/js/_docs/kaixin.js.gb.md",
+		"/Users/hurukun/Desktop/record/javascript.md",
+		"/Users/hurukun/Desktop/record/knowledge.txt",
+		"/Users/hurukun/Develop/kaixin.sublime-project",
+		"/Volumes/public/builder share/Book/sea-debug.js",
+		"/Users/hurukun/Desktop/tmp.txt",
+		"/Library/WebServer/Documents/php/example/guahao/content.html",
+		"/Library/WebServer/Documents/php/example/guahao/index.html",
+		"/Library/WebServer/Documents/js/logon.js",
+		"/Library/WebServer/Documents/node/server/application/proxy.js",
+		"/Library/WebServer/Documents/node/server/application/guahao.js",
+		"/Library/WebServer/Documents/node/server/application/index.js",
+		"/Library/WebServer/Documents/php/example/index.php",
+		"/Library/WebServer/Documents/php/example/item.php",
+		"/Library/WebServer/Documents/php/blog/ajax/aj_abstract.php",
+		"/Library/WebServer/Documents/php/blog/ajax/aj_article.php",
+		"/Library/WebServer/Documents/php/blog/ajax/aj_keyword.php",
+		"/Library/WebServer/Documents/php/blog/article.php",
+		"/Library/WebServer/Documents/php/blog/index.php",
+		"/Library/WebServer/Documents/php/templates/example/index.tpl",
+		"/Library/WebServer/Documents/php/global.php",
+		"/Library/WebServer/Documents/js/apps/blog/AArticle.js",
+		"/Library/WebServer/Documents/js/apps/blog/AAdmin.js",
+		"/Library/WebServer/Documents/js/apps/blog/AIndex.js",
+		"/Library/WebServer/Documents/js/apps/blog/Publisher.js",
+		"/Library/WebServer/Documents/php/index.php",
+		"/Users/hurukun/Library/Application Support/Sublime Text 2/Packages/GBK Encoding Support/tmp/SpecialEffect.js                %2FLibrary%2FWebServer%2FDocuments%2Fjs%2Fcommon%2FSpecialEffect.js",
+		"/Library/WebServer/Documents/js/npm-debug.log",
+		"/Library/WebServer/Documents/php/include/apps/auth/CA_Auth_Authorize.php",
+		"/Users/hurukun/Desktop/work/Resume/experience/experience.txt",
+		"/Users/hurukun/Desktop/plat.js",
+		"/Users/hurukun/Desktop/jQuery mobile",
+		"/Users/hurukun/Desktop/being_done.txt",
+		"/Library/WebServer/Documents/node/template/guahao/monthlyDetail.html",
+		"/Library/WebServer/Documents/node/template/guahao/dailyDetail.html",
+		"/Users/hurukun/Desktop/record/SQLLite",
+		"/Users/hurukun/Desktop/record/MySQL",
+		"/Library/WebServer/Documents/resut.html",
+		"/Library/WebServer/Documents/resut.text",
+		"/Library/WebServer/Documents/node/template/guahao/login.html",
+		"/Users/hurukun/Desktop/record/Yoman_Grunt",
+		"/Users/hurukun/Desktop/record/jQueryMobile",
+		"/Users/hurukun/Desktop/record/模式识别",
+		"/Users/hurukun/Desktop/record/nodejs",
+		"/Users/hurukun/Desktop/record/iOS Web",
+		"/Users/hurukun/Desktop/record/Refactorings",
+		"/Users/hurukun/Desktop/record/Python",
+		"/Users/hurukun/Desktop/record/Range",
+		"/Users/hurukun/Desktop/record/Angular",
+		"/Users/hurukun/Desktop/record/SASS",
+		"/Users/hurukun/Desktop/knowledge.txt",
+		"/Library/WebServer/Documents/node/template/guahao/department.html",
+		"/Library/WebServer/Documents/node/template/guahao/hospital.html",
+		"/Library/WebServer/Documents/node/template/guahao/yyds.html",
+		"/Library/WebServer/Documents/php/jqmobile/guahao/index.html",
+		"/Library/WebServer/Documents/node/server/application/hospital.html",
+		"/Library/WebServer/Documents/node/server/core/render.js",
+		"/Library/WebServer/Documents/node/server/http/srv_http.js",
+		"/Library/WebServer/Documents/node/server/global.js",
+		"/Library/WebServer/Documents/node/server/core/route.js",
+		"/Library/WebServer/Documents/php/iblog/index.php",
+		"/Library/WebServer/Documents/system/mysql/blog/init.sql",
+		"/Library/WebServer/Documents/php/include/apps/iblog/CA_iBlog_Config.php",
+		"/Library/WebServer/Documents/php/templates/common/base.tpl",
+		"/Library/WebServer/Documents/js/common/AHeader.js",
+		"/Library/WebServer/Documents/php/blog/ajax/aj_abs_list.php",
+		"/Library/WebServer/Documents/php/blog/ajax/aj_mod_keyword.php",
+		"/Library/WebServer/Documents/php/templates/home/index.tpl",
+		"/Library/WebServer/Documents/index.html",
+		"/Library/WebServer/Documents/css/combo.sh",
+		"/Library/WebServer/Documents/css/base/box.scss",
+		"/Library/WebServer/Documents/css/config/common.scss",
+		"/Library/WebServer/Documents/css/config/blog.scss",
+		"/Library/WebServer/Documents/js/core/switch/AjaxPageTurner.js",
+		"/Library/WebServer/Documents/blog/README.txt",
+		"/Library/WebServer/Documents/auth/README.txt",
+		"/Users/hurukun/Documents/PhoneGapLib/Makefile",
+		"/Users/hurukun/Desktop/work/Example/write_dialog.php",
+		"/Users/hurukun/Desktop/json.json",
+		"/Users/hurukun/Documents/Files/record.txt",
+		"/Users/hurukun/Documents/Files/wage.txt",
+		"/Library/WebServer/Documents/css/config/index.scss",
+		"/Library/WebServer/Documents/css/_combo/blog.css",
+		"/Library/WebServer/Documents/css/_combo/index.css",
+		"/Library/WebServer/Documents/css/common/frame.scss",
+		"/Library/WebServer/Documents/css/common/poppage.scss",
+		"/Library/WebServer/Documents/css/_combo/index.scss",
+		"/Library/WebServer/Documents/css/_combo/blog.scss",
+		"/Library/WebServer/Documents/css/_combo/blog.css",
+		"/Library/WebServer/Documents/css/_combo/blog.css",
+		"/Library/WebServer/Documents/css/base/define.scss",
+		"/Library/WebServer/Documents/css/base/button.scss",
+		"/Library/WebServer/Documents/css/base/list.scss",
+		"/Library/WebServer/Documents/css/base/se.scss",
+		"/Library/WebServer/Documents/css/_combo/common.scss",
+		"/Library/WebServer/Documents/css/base/common.scss",
+		"/Library/WebServer/Documents/css/common/combo.scss",
+		"/Library/WebServer/Documents/css/base/combo.sh",
+		"/Library/WebServer/Documents/jqmobile/guahao/index.html",
+		"/Library/WebServer/Documents/css/widgets/publisher.css",
+		"/Library/WebServer/Documents/jqmobile/guahao/css/base.scss",
+		"/Library/WebServer/Documents/jqmobile/guahao/css/guahao.scss",
+		"/Library/WebServer/Documents/css/base/global.scss",
+		"/Library/WebServer/Documents/jqmobile/guahao/index2.html",
+		"/Library/WebServer/Documents/jqmobile/guahao/css/base.sass",
+		"/Library/WebServer/Documents/jqmobile/leng/index.html",
+		"/Library/WebServer/Documents/node_server/template/index.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Library/WebServer/Documents/js",
+			"/Library/WebServer/Documents/node_server",
+			"/Library/WebServer/Documents/__demos",
+			"/Library/WebServer/Documents/",
+			"/Library/WebServer/Documents/js",
+			"/Library/WebServer/Documents",
+			"/Users/hurukun/Develop/dev/img",
+			"/Users/hurukun/Develop/dev/code/php/platform/rgroup",
+			"/Users/hurukun/Develop/dev/img",
+			"/Users/hurukun/Develop/dev/code",
+			"/Users/hurukun/Develop/dev/img/htdocs/js",
+			"/Library/WebServer/Documents/",
+			"/Users/hurukun/Develop/dev/img",
+			"/Users/hurukun/Develop/dev/code",
+			"/Users/hurukun/Develop/dev/img",
+			"/Users/hurukun/Develop/dev",
+			"/Users/hurukun/Develop/dev/img/htdocs/js/apps/gift,/Users/hurukun/Develop/dev/img",
+			"/Users/hurukun/Develop/dev/img/htdocs/js/apps/gift"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"K.CustEvent",
+			"onupload_success_handler",
+			"loadedhandler",
+			"tester",
+			"&&",
+			"K",
+			"/example",
+			"php/global",
+			"php",
+			".php",
+			"api",
+			"console.log",
+			"oriReq",
+			"_res",
+			"vender",
+			"monthlyDetail",
+			"yyds",
+			"console.log",
+			"$",
+			"parseWeb",
+			"_response",
+			"'",
+			"\\n',",
+			"console.log",
+			"method",
+			"abstract_list",
+			"aj_mod_keyword",
+			"update",
+			"calendar",
+			"navMonth",
+			"dialog-ft",
+			"plain-list",
+			"calender",
+			"popup",
+			"radial-gradient",
+			"handle403",
+			"extend",
+			"http",
+			"util",
+			"proxyResponse",
+			"console.log",
+			"util.puts",
+			"uti.puts",
+			"log",
+			"puts",
+			"config",
+			"route",
+			"parseUrl_",
+			"handleRequest_",
+			"MimeMap",
+			"parseUrl_",
+			"handleRequest",
+			"MimeMap",
+			"escapeHtml",
+			"events",
+			"util",
+			"sendDirectory_",
+			"sendRedirect_",
+			"CONTROLLER_PATH",
+			"#",
+			"location",
+			"hash",
+			"console",
+			"path",
+			"pathname",
+			"parseRecord",
+			"response",
+			"proxyObject",
+			"log",
+			"console.log",
+			"MimeMap",
+			"querystring",
+			"proxy",
+			"escapeHtml",
+			"orderBy",
+			"yoman",
+			"orderProp",
+			"main",
+			"phoneId",
+			"body",
+			"tap",
+			"ajax",
+			"Ajax",
+			"NEED_NO_AUTH",
+			"tbname",
+			"registerReset",
+			"registerSubmit",
+			"Env",
+			"Ajax",
+			"Submit",
+			"CB_Auth",
+			"docInit",
+			"appList",
+			"Browser",
+			"Env",
+			"Loader",
+			"window",
+			"Global",
+			"window",
+			"Global",
+			"GD",
+			"window.GD",
+			"ajax",
+			"getDocument",
+			"editor:focus",
+			"iframe:loaded",
+			"iframe",
+			"DOM",
+			"onBusLineHtmlSet",
+			"tester",
+			"please",
+			"mc-p",
+			"ffPanel",
+			"itemFooter",
+			"bTrigger",
+			"shBlFlod",
+			"shBl",
+			"onUpload",
+			"filelimit",
+			"$id",
+			"filetypes",
+			"n",
+			"getStart",
+			"git",
+			"parentElement()",
+			"DOM",
+			"refresh",
+			"switchList"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"/php/example",
+			"vendor",
+			"_res",
+			"",
+			"abstract",
+			"calendar",
+			"proxyRes",
+			"Config",
+			"_parseUrl",
+			"tbName",
+			"loginReset",
+			"loginSubmit",
+			"Global",
+			"SDFW",
+			"focus.editor",
+			"loaded.iframe",
+			"loaded:iframe",
+			"example",
+			"me",
+			"this",
+			"me",
+			"this",
+			"",
+			"this.BRUSH_SIZE",
+			"this.canvas",
+			"this.ready",
+			"/css/i2",
+			"/i2",
+			"GD",
+			"Scroll",
+			"/i",
+			"url(http://{_IMGHOST_}/",
+			"url(http://{imghost}/",
+			"",
+			"tm_bar_",
+			"tm_16_",
+			"tm_15_",
+			"tm_14_",
+			"tm_13_",
+			"tm_12_",
+			"tm_11_",
+			"tm_10_",
+			"tm_09_",
+			"tm_08_",
+			"tm_07_",
+			"tm_06_",
+			"tm_05_",
+			"tm_04_",
+			"tm_03_",
+			"tm_02_",
+			"tm_01_",
+			"tm_00_",
+			"bar.push( SceneStore.buildBarItem( page++ ) );",
+			"",
+			"16",
+			"9",
+			"8",
+			"p4",
+			"",
+			"delay",
+			"switcher",
+			"FloatStage.Switcher",
+			"Switcher",
+			"container",
+			"$this->",
+			"loader",
+			"me",
+			"shapes",
+			"'shape'",
+			"ampFactor",
+			"",
+			"maxRadius",
+			"minRadius",
+			"nclass",
+			"this.createRGOperation",
+			"createRGOperation",
+			"Director.createFooter",
+			"cntPanel",
+			"body",
+			"panel",
+			"createBodyMe",
+			"createBodyFriend",
+			"createBodyStranger",
+			"createBodyOrg",
+			"createBodyStar",
+			"footer.html",
+			"createContactButton",
+			"data",
+			"NewsBubbleBottom",
+			"NewsBubbleTop",
+			"widgets",
+			"data-action",
+			"action",
+			"#",
+			"_onToPage",
+			"startNode",
+			"replaceNodeName",
+			"DOM.getClosestBlockNode",
+			"DOM.getRootParent",
+			"DOM.replaceNode",
+			"itemFooter",
+			"itemContent",
+			"itemHead",
+			"bTrigger",
+			"Util",
+			"PageTurner",
+			"classes",
+			"class",
+			"range",
+			"Selection.",
+			"getRoot",
+			"Range.refresh",
+			"getRootParent",
+			"Range.getRootStart",
+			"visitor",
+			"range",
+			"this.ele.bind( 'mousedown', function(){return false;} );\n                this.ele.bind( 'mouseup', $.proxy( this.action, this ) );",
+			"eleEle",
+			"nodes",
+			"rangeNodes",
+			"marginLeft",
+			"",
+			"ForceBloc\nForceBloc\n",
+			"ForceBloc\nForceBloc\nforceBlocks",
+			"},",
+			":",
+			": {",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 142.0
+	},
+	"output.jslint_result_view":
+	{
+		"height": 142.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 142.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"main",
+				"main.cpp"
+			],
+			[
+				"tree",
+				"tree.cpp"
+			],
+			[
+				"",
+				"tree.h"
+			],
+			[
+				"make",
+				"Makefile.sh"
+			],
+			[
+				"j",
+				"js/jquery.1.7.1.all.min.js"
+			],
+			[
+				"co",
+				"js/common.js"
+			],
+			[
+				"function.js",
+				"js/function.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 148.0,
+	"status_bar_visible": true
+}

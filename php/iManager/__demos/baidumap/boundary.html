@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<style type="text/css"> 
+body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;} 
+#l-map{height:100%;width:78%;float:left;border-right:2px solid #bcbcbc;} 
+#r-result{height:100%;width:20%;float:left;} 
+</style> 
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=F489e4d951ec45146184e1fe6a639a60"></script> 
+<title>H7N9分布图</title> 
+</head> 
+<body> 
+<div id="allmap"></div> 
+</body> 
+</html> 
+<script type="text/javascript"> 
+var map = new BMap.Map("allmap"); 
+map.centerAndZoom(new BMap.Point(116.403765, 39.914850), 5); 
+map.enableScrollWheelZoom(); 
+var cr = new BMap.CopyrightControl({anchor: BMAP_ANCHOR_TOP_RIGHT}); 
+map.addControl(cr); //添加版权控件 
+var bs = map.getBounds(); 
+cr.addCopyright({id: 1, content: "<a href='http://news.xinhuanet.com/local/2013-04/08/c_115307243.htm' style='fontFamily:微软雅黑;font-size:18px;background:white'>H7N9数据来源</a>", bounds: bs}); 
+map.setViewport(new BMap.Bounds(new BMap.Point(114.603589,26.853244),new BMap.Point(122.863975,35.288772))); //调整视野 
+var data=[{city:'上海市',infect:10,color:'#FF0000'},{city:'江苏省',infect:6,color:'#EE3B3B'},{city:'安徽省',infect:2,color:'#FFAEB9'},{city:'浙江省',infect:3,color:'#EE3B3B'}]; 
+//上海(10例，死亡4例)、江苏(6例)、安徽(2例)、浙江(3例，死亡2例) 4.8号数据 
+var bdary = new BMap.Boundary(); 
+var length=data.length; 
+for (var index=0;index<length ;index++ ) 
+{ 
+(function(index){ //闭包用法 
+bdary.get(data[index].city, function(rs){ //获取行政区域 
+var count = rs.boundaries.length; //行政区域有几部分多边形组成 
+var bounds; 
+var center; 
+for(var i = 0; i < count; i++){ 
+ply = new BMap.Polygon(rs.boundaries[i], {strokeWeight: 2, strokeColor: data[index].color,fillColor: data[index].color,fillOpacity:0.8 }); //建立多边形覆盖物 
+if (!bounds)//取行政区域第一组成部分的中心点 
+{ 
+center=ply.getBounds().getCenter(); 
+} 
+map.addOverlay(ply); //添加覆盖物 
+} 
+
+var myIcon = new BMap.Icon("infection.png", new BMap.Size(27,60)); 
+var marker1 = new BMap.Marker(center,{icon:myIcon}); // marker 
+map.addOverlay(marker1); 
+var label = new BMap.Label("人数"+data[index].infect,{offset:new BMap.Size(-10,0)});//显示label 
+marker1.setLabel(label); 
+}); 
+})(index); 
+} 
+</script>

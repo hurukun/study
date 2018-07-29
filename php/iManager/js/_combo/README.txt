@@ -1,0 +1,1 @@
+this folder contains combined js files;

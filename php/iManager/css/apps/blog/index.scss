@@ -1,0 +1,45 @@
+/*正文列表每项*/
+.mcontent-panel>ul>li{display:block;min-height:100px;margin-bottom:15px;color:black;}
+
+.absTitle{font-size:22px;color:purple;}
+.absEdit{float:right;}
+
+.box:hover .itemHead{background:#f5f5f5;}
+.box:hover .itemFooter li{border-radius:10px;background:#f0f0f0;}
+
+
+.wordWrap{word-wrap:break-word; overflow:hidden;max-height:150px;}
+
+/*关键字 列表*/
+.hTabList dt label{margin-left:5px; color:orange;}
+.hTabList dd{float:left;}
+.hTabList li a, .hTabList dd a{height:25px;line-height:25px;font-size:13px;margin-left:5px;}
+.hTabList li *, .hTabList dd *{margin:5px 5px 0 0;}
+.hTabList {overflow:auto;}
+.hTabList li{float:left;margin-right:5px;}
+
+.itemList li{display:block;margin:10px;}
+.itemHead{padding:10px;border-bottom:1px solid #ccc;}
+.itemContent{padding:10px 10px 0 10px;}
+
+
+/* 容器 子 li 均浮动 */
+.itemFooter{display:block;overflow:auto;padding:10px 60px 10px 10px;}
+.itemFooter ul li{float:left;display:inline;}
+.itemFooter li *{display:inline;}/*ie6 bug*/
+
+.bTrigger{display:inline;cursor:pointer;}
+
+/*弹出层*/
+.article{
+    margin:0px 80px;
+}
+.artTitle{
+    margin:10px 0px;font-size:25px;
+}
+.pubInfo{
+    margin:0px 0px 5px;
+}
+.artAppend{
+    height:20px;
+}

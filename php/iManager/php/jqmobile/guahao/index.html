@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>挂号</title>
+    <link rel="stylesheet" href="./css/jquery.mobile-1.3.1.min.css" />
+    <script src="./js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).bind( 'mobileinit', function(){
+            // $.extend(  $.mobile , {
+            //     linkBindingEnabled: false,
+            //     autoInitializePage: true,
+            //     hashListeningEnabled:false
+            // });
+        } );
+    </script>
+    <script src="./js/jquery.mobile-1.3.1.min.js"></script>
+    <style type="text/css">
+        .c{clear:both;}
+        .plain-list{margin:0px;padding:0px;list-style:none;}
+        .dialog-ft{margin:15px 0px 0px 0px;}
+        [data-sigil="navMonth"]{text-align:center;}
+        [data-sigil="calender"]{padding:25px 0px;}
+        .calender table{
+            border: 0;
+            border-collapse: collapse;
+            padding: 0;
+            width: 100%;
+            height:150px;
+        }
+        .calender table td{
+            text-align:center;
+            height:45px;
+        }
+         .calender table td a span{
+            position: relative;
+            top: 35%;
+         }
+         .available-day{display: block;height:100%;background-image:-webkit-linear-gradient( top, #efe, #6e6 );text-decoration:none;}
+         .unavailable-day{display: block;height:100%;background-image:-webkit-linear-gradient( top, #fee, #f65 );text-decoration:none;}
+    </style>
+</head>
+<body>
+    <!-- 主页 -->
+    <div data-role="page" id="home">
+        <div data-role="content">
+            <div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+                <a data-role="button" >医院</a>
+                <a href="#hospital" data-role="button" data-inline="true" data-iconpos="right" data-icon="arrow-r">请选择医院</a>
+            </div>
+            <div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+                <a data-role="button" >科室</a>
+                <a href="#department" data-role="button" data-inline="true" data-iconpos="right" data-icon="arrow-r">请选择科室</a>
+            </div>
+            <div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+                <a href="#" data-role="button" data-theme="b" data-inline="true">挂号</a>
+            </div>
+        </div><!-- /content -->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" class="ui-btn-active ui-state-persist">挂号</a></li>
+                    <li><a href="#profile">个人中心</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
+    </div><!-- /page.index -->
+
+    <!-- 个人信息，未开通-->
+    <div data-role="page" id="profile_register">
+        <div data-role="content">
+            <ul data-role="listview">
+                <li data-role="fieldcontain">
+                    <label for="id_number">证件号</label><input type="text" id="id_number" disabled>
+                </li>
+                <li data-role="fieldcontain">
+                    <label for="passwd">密码</label><input type="password" id="passwd">
+                </li>
+                <li data-role="fieldcontain">
+                    <label for="passwd_con">密码确认</label><input type="password" id="passwd_con">
+                </li>
+                <li data-role="fieldcontain">
+                    <label for="email">E-mail</label><input type="text" id="email">
+                </li>
+                <li data-role="fieldcontain">
+                    <label for="phone">手机</label><input type="text" id="phone" disabled>
+                    <input type="hidden" name="mib" id="mib" value="15801533840">
+                </li>
+                <li data-role="fieldcontain">
+                    <label for="yzm_number">验证码</label><input type="text" id="yzm_number">
+                </li>
+                <li><div><a><img src=""></a></div></li>
+                <li data-role="fieldcontain">
+                    <label for="smsg_number">短信验证码</label><input type="text" id="smsg_number">
+                </li>
+                <li><div><a href="#" data-role="button">获取短信验证码</a></div></li>
+                <li > <div><a href="#bookForm" data-role="button" data-theme="b">确认提交</a></div></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 个人信息，未登录-->
+    <div data-role="page" id="profile_login">
+        <div data-role="content">
+            <ul data-role="listview">
+                <li data-role="fieldcontain">
+                    <label for="id_number">证件号</label><input type="text" id="id_number" disabled>
+                    <input type="hidden" name="mib" id="mib" value="15801533840">
+                </li>
+                <li data-role="fieldcontain">
+                    <label for="passwd">密码</label><input type="password" id="passwd">
+                </li>
+                <li data-role="fieldcontain">
+                    <label for="yzm_number">验证码</label><input type="text" id="yzm_number">
+                </li>
+                <li><div><a><img src=""></a></div></li>
+                <li data-role="fieldcontain">
+                    <label for="smsg_number">短信验证码</label><input type="text" id="smsg_number">
+                </li>
+                <li><div><a href="#" data-role="button">获取短信验证码</a></div></li>
+                <li > <div><a href="#bookForm" data-role="button" data-theme="b">登录</a></div></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 个人信息 -->
+    <div data-role="page" id="profile">
+        <div data-role="content">
+            <ul data-role="listview" data-theme="d" data-divider-theme="b">
+                <li data-role="list-divider">我的预约单 <span class="ui-li-count">2</span></li>
+                <li><a href="#appointment">
+                    
+                        <h3>专家李</h3>
+                        <p><strong>职称：</strong>主治医师</p>
+                        <p><strong>专长：</strong>小儿急救、呼吸系统疾病、消化系统疾病、中枢神经系统疾病、泌尿系统疾病</p>
+                        <p><strong>挂号费：</strong>10.00元</p>
+                        <p class="ui-li-aside"><strong>2013-05-10 星期一 上午</strong></p>
+                </a></li>
+                <li><a href="#appointment">
+
+                        <h3>专家李</h3>
+                        <p><strong>职称：</strong>主治医师</p>
+                        <p><strong>专长：</strong>小儿急救、呼吸系统疾病、消化系统疾病、中枢神经系统疾病、泌尿系统疾病</p>
+                        <p><strong>挂号费：</strong>10.00元</p>
+                        <p class="ui-li-aside"><strong>2013-05-10 星期一 上午</strong></p>
+                </a></li>
+            </ul>
+        </div><!-- /content -->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" >挂号</a></li>
+                    <li><a href="#profile" class="ui-btn-active ui-state-persist">个人中心</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
+    </div><!-- /page.profile -->
+
+    <!-- 医院列表 -->
+     <div data-role="page" id="hospital" data-title="Hospital">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-icon="arrow-l" data-sigil="back">返回</a>
+            <h1>医院</h1>
+            <a href="#home" data-icon="home">主页</a>
+        </div><!-- /header -->
+        <div data-role="content">
+                    <ul data-role="listview" data-filter="true" data-filter-theme="c" data-divider-theme="d">
+                        <li><a href="#department">Adam Kinkaid</a></li>
+                        <li><a href="index.html">Alex Wickerham</a></li>
+                        <li><a href="index.html">Avery Johnson</a></li>
+                        <li><a href="index.html">Bob Cabot</a></li>
+                        <li><a href="index.html">Caleb Booth</a></li>
+                    </ul>
+        </div><!-- /content -->
+    </div><!-- /page.hospital -->
+
+    <!-- 科室列表 -->
+    <div data-role="page" id="department" data-title="Department">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-icon="arrow-l" data-sigil="back">返回</a>
+            <h1>科室</h1>
+            <a href="#home" data-icon="home">主页</a>
+        </div><!-- /header -->
+        <div data-role="content" style="padding:0px;">
+            <div style="position:fixed;width:40%;height:100%;overflow:scroll;padding:15px;">
+                <ul data-role="listview">
+                    <li ><a href="#">Alex Wickerham</a></li>
+                    <li ><a href="#">Alex Wickerham</a></li>
+                    <li ><a href="#">Alex Wickerham</a></li>
+                    <li ><a href="#">Alex Wickerham</a></li>
+                    <li ><a href="#">Alex Wickerham</a></li>
+                    <li ><a href="#">Alex Wickerham</a></li>
+                    <li ><a href="#">Alex Wickerham</a></li>
+                    <li ><a href="#">Alex Wickerham</a></li>
+                    <li ><a href="#">Alex Wickerham</a></li>
+                    <li ><a href="#">Alex Wickerham</a></li>
+                    <li ><a href="#">Alex Wickerham</a></li>
+                    <li ><a href="#">Alex Wickerham</a></li>
+                    <li ><a href="#">Alex Wickerham</a></li>
+                    <li ><a href="#">Alex Wickerham</a></li>
+                    <li ><a href="#">Alex Wickerham</a></li>
+                    <li ><a href="#">Alex Wickerham</a></li>
+                    <li ><a href="#">Alex Wickerham</a></li>
+                </ul>
+            </div>
+            <div style="position:fixed;left:40%;width:60%;height:100%;overflow:scroll;padding:15px;">
+                <ul data-role="listview">
+                    <li ><a href="#schedule">Alex Wickerham</a></li>
+                    <li ><a href="#schedule">Alex Wickerham</a></li>
+                    <li ><a href="#schedule">Alex Wickerham</a></li>
+                    <li ><a href="#schedule">Alex Wickerham</a></li>
+                    <li ><a href="#schedule">Alex Wickerham</a></li>
+                    <li ><a href="#schedule">Alex Wickerham</a></li>
+                    <li ><a href="#schedule">Alex Wickerham</a></li>
+                    <li ><a href="#schedule">Alex Wickerham</a></li>
+                    <li ><a href="#schedule">Alex Wickerham</a></li>
+                    <li ><a href="#schedule">Alex Wickerham</a></li>
+                    <li ><a href="#schedule">Alex Wickerham</a></li>
+                    <li ><a href="#schedule">Alex Wickerham</a></li>
+                    <li ><a href="#schedule">Alex Wickerham</a></li>
+                    <li ><a href="#schedule">Alex Wickerham</a></li>
+                    <li ><a href="#schedule">Alex Wickerham</a></li>
+                    <li ><a href="#schedule">Alex Wickerham</a></li>
+                    <li ><a href="#schedule">Alex Wickerham</a></li>
+                </ul>
+            </div>
+        </div><!-- /content -->
+    </div><!-- /page.department -->
+
+    <!-- 预约资源 -->
+    <div data-role="page" id="schedule" data-title="Schedule">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-icon="arrow-l" data-sigil="back">返回</a>
+            <h1>预约月历表</h1>
+            <a href="#home" data-icon="home">主页</a>
+        </div><!-- /header -->
+        <div data-role="content">
+            <div data-sigil="calender">
+                <div data-sigil="navMonth">
+                    <a href="#" data-icon="arrow-l" data-sigil="back">上一月</a>
+                    <label for="">2013年5月</label>
+                    <a href="#" data-icon="arrow-r" data-sigil="back">下一月</a>
+                </div>
+                <div class="calender" data-sigil="day">
+                    <table  id="my-table" >
+                        <thead>
+                            <tr>
+                              <th>日</th>
+                              <th>一</th>
+                              <th>二</th>
+                              <th>三</th>
+                              <th>四</th>
+                              <th>五</th>
+                              <th>六</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td><a href="#popupDialog"  data-rel="dialog" class="unavailable-day ui-link"><span>2</span></a></td>
+                              <td><a href="#popupDialog" class="available-day ui-link"><span>3</span></a></td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+            <div data-sigil="information">
+                <h2>重要提示:</h2>
+                    <ol>
+                        <li>预约周期：91天</li>
+                        <li>放号时间：0:00</li>
+                        <li>停挂时间：下午15:00停止次日预约挂号 (周五15:00后停挂至下周一)</li>
+                        <li>退号时间：就诊前一工作日15:00前取消</li>
+                        <li>特殊规则：无</li>
+                    </ol>
+            </div>
+        </div>
+        </div>
+    </div>
+<!-- 号信息列表 -->
+            <div data-role="page" id="popupDialog" data-overlay-theme="a" data-theme="c" style="max-width:400px;" class="ui-corner-all">
+                <div data-role="header" data-theme="a" class="ui-corner-top">
+                    <h1>开始预约</h1>
+                </div>
+                <div data-role="content" data-theme="d" class="ui-corner-bottom ui-content">
+                    <ul data-role="listview" data-theme="d" data-divider-theme="b">
+                        <li data-role="list-divider">2013-05-10 星期一 上午 <span class="ui-li-count">2</span></li>
+                        <li><a href="#appointment">
+                            
+                                <h3>专家李</h3>
+                                <p><strong>职称：</strong>主治医师</p>
+                                <p><strong>专长：</strong>小儿急救、呼吸系统疾病、消化系统疾病、中枢神经系统疾病、泌尿系统疾病</p>
+                                <p><strong>挂号费：</strong>10.00元</p>
+                                <p class="ui-li-aside">剩余<strong>2</strong></p>
+                            
+                        </a></li>
+                        <li><a href="#appointment">
+                            
+                                <h3>专家李</h3>
+                                <p><strong>职称：</strong>主治医师</p>
+                                <p><strong>专长：</strong>小儿急救、呼吸系统疾病、消化系统疾病、中枢神经系统疾病、泌尿系统疾病</p>
+                                <p><strong>挂号费：</strong>10.00元</p>
+                                <p class="ui-li-aside">剩余<strong>0</strong></p>
+                        </a></li>
+                        <li data-role="list-divider">2013-05-10 星期一  下午<span class="ui-li-count">0</span></li>
+                        <li><a href="#appointment">
+                            
+                                <h3>专家李</h3>
+                                <p><strong>职称：</strong>主治医师</p>
+                                <p><strong>专长：</strong>小儿急救、呼吸系统疾病、消化系统疾病、中枢神经系统疾病、泌尿系统疾病</p>
+                                <p><strong>挂号费：</strong>10.00元</p>
+                            
+                        </a></li>
+                    </ul>
+                    <div class="dialog-ft">
+                        <a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="c">Cancel</a>    
+                    </div>
+                </div>
+            </div>
+    <!-- 预约 -->
+    <div data-role="page" id="appointment" data-title="Appointment">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-icon="arrow-l" data-sigil="back">返回</a>
+            <h1>预约</h1>
+            <a href="#home" data-icon="home">主页</a>
+        </div><!-- /header -->
+        <div data-role="content">
+            <ul data-role="listview" data-theme="d" data-divider-theme="b">
+                        <li data-role="list-divider">重要提示</li>
+                                <li>预约周期：91天</li>
+                                <li>放号时间：0:00</li>
+                                <li>停挂时间：下午15:00停止次日预约挂号 (周五15:00后停挂至下周一)</li>
+                                <li>退号时间：就诊前一工作日15:00前取消</li>
+                                <li>特殊规则：无</li>
+                        <li data-role="list-divider">预约信息</li>
+                            <li>选择的医院:北京大学第三医院</li>
+                            <li>选择的科室:皮肤科门诊</li>
+                            <li>选择的医生:副教授号7元</li>
+                            <li>挂号费:7.00</li>
+                            <li>就诊日期:2013-05-20 上午</li>
+                        <li data-role="list-divider">信息验证</li>
+                            <li data-role="fieldcontain"><label for="jzk_number">就诊卡号</label><input type="text" id="jzk_number"></li>
+                            <li data-role="fieldcontain"><label for="ybk_number">医保卡号</label><input type="text" id="ybk_number"></li>
+                            <li data-role="fieldcontain">
+                                <label for="ybk_number">医保卡号</label>
+                                <select name="select-choice-1" id="insurance" data-native-menu="false">
+                                    <option value="ylbx">医疗保险</option>
+                                    <option value="sybx">商业保险</option>
+                                    <option value="gfyl">公费医疗</option>
+                                    <option value="other">其它</option>
+                                </select>
+                            </li>
+                            <li data-role="fieldcontain">
+                                <label for="smsg_number">短信验证</label><input type="text" id="smsg_number">
+                            </li>
+                            <li><div><a href="#" data-role="button">获取短信验证码</a></div></li>
+                            <li > <div><a href="#bookForm" data-role="button" data-theme="b">确认预约</a></div></li>
+                    </ul>
+        </div>
+    </div>
+
+     <!-- 预约单 -->
+    <div data-role="page" id="bookForm" data-title="BookForm">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-icon="arrow-l" data-sigil="back">返回</a>
+            <h1>我的预约</h1>
+            <a href="#home" data-icon="home">主页</a>
+        </div><!-- /header -->
+         <div data-role="content">
+            <ul data-role="listview" data-theme="d" data-divider-theme="b">
+                    <li data-role="list-divider">预约单</li>
+                        <li>预约的医院:北京大学第三医院</li>
+                        <li>预约的科室:皮肤科门诊</li>
+                        <li>预约的医生:副教授号7元</li>
+                        <li>挂号费:7.00</li>
+                        <li>就诊日期:2013-05-20 上午</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+    $(document).on( "click", ".show-page-loading-msg", function() {
+      var $this = $( this ),
+        theme = $this.jqmData( "theme" ) || $.mobile.loader.prototype.options.theme,
+        msgText = $this.jqmData( "msgtext" ) || $.mobile.loader.prototype.options.text,
+        textVisible = $this.jqmData( "textvisible" ) || $.mobile.loader.prototype.options.textVisible,
+        textonly = !!$this.jqmData( "textonly" );
+        html = $this.jqmData( "html" ) || "";
+      $.mobile.loading( 'show', {
+          text: msgText,
+          textVisible: textVisible,
+          theme: theme,
+          textonly: textonly,
+          html: html
+      });
+    })
+    .on( "click", ".hide-page-loading-msg", function() {
+      $.mobile.loading( "hide" );
+    });
+    $( document.body ).delegate( '[data-sigil="back"]', 'click', function( evt ){
+        window.history.back();
+        evt.preventDefault();
+        evt.stopPropagation();
+    } );
+  </script>
+</body>
+</html>

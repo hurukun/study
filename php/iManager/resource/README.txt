@@ -1,0 +1,1 @@
+this folder contains static resource for the site;
