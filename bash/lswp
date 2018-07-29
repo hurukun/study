@@ -1,0 +1,51 @@
+#!/bin/sh
+#this script is used to list all files in the given directory with its whole path information
+#parameter: by default, the current dir will be scan and the result will be printed on console.
+#	    -d dir  	specify a directory to scan
+#	    -f filename specify a file to record the result.
+#	    -o		overwrite the file used to record the result. By default, the result will be appended to it.
+OLD_DIR=$(pwd)
+CUR_DIR=${OLD_DIR}
+OVERWRITE=0;
+while getopts d:f:o-: name
+do
+	case ${name} in
+		d) cd ${OPTARG} 
+	           CUR_DIR=$(pwd)
+		;;
+		f) OUT_FILE=${OPTARG}
+		;;
+		o) OVERWRITE=1 
+		;;
+		-) if [ ${OPTARG} = 'help' ]; then
+		echo "This script is used to list all files in the given directory with its whole path information
+		parameter: by default, the current dir will be scan and the result will be printed on console.
+			-d dir      specify a directory to scan
+		        -f filename specify a file to record the result.
+			-o          overwrite the file used to record the result. By default, the result will be appended to it."
+		   fi
+		   exit 0
+		;;
+		\?) echo "Bad option:${name},${OPTARG}"
+		exit 1
+		;;
+	esac
+done
+
+cd ${OLD_DIR}
+
+for file in `ls ${CUR_DIR}/`
+do
+	if [ -z "${OUT_FILE}" ]; then
+		echo "${CUR_DIR}/${file}"
+	else
+		if [ "${OVERWRITE}" -eq "1" ]; then
+			if [ -f ${OUT_FILE} ]; then
+				rm ${OUT_FILE}
+			fi
+			OVERWRITE=0
+		fi
+		echo "${CUR_DIR}/${file}" >> ${OUT_FILE}
+	fi
+done
+
