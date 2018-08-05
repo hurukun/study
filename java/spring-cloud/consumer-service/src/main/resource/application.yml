@@ -1,0 +1,26 @@
+server:
+    port: 8802
+spring:
+    application:
+        name: consumer-service
+    http:
+        multipart.maxFileSize: 10MB
+        multipart.maxRequestSize: 1000Mb
+    config:
+        locations: classpath*:application/spring/init.xml
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://128.160.184.19:3306/csrcdb?useUnicode=true&characterEncoding=utf-8&useSSL=false
+        username: csc
+        password: ccb123456
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://user:123456@localhost:8888/eureka/
+    instance:
+        prefer-ip-address: true
+logging:
+    level:
+        root:INFO
+user:
+    serviceUrl: http://127.0.0.1:8801/

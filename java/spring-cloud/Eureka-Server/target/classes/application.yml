@@ -1,0 +1,47 @@
+server:
+    port: 8888
+
+security: #用户认证
+    basic:
+        enable: true
+    user:
+        name: user
+        password: 123456
+
+eureka:
+    instance:
+        metadata-map: #自定义meta
+            my-key: my-value
+    client:
+        registerWithEureka: false
+        fetchRegistry: false
+        serviceUrl:
+            defaultZone: http://localhost:8888/eureka/
+
+info:
+    app:
+        name: ${project.artifactId}
+        java:
+            source:${java.version}
+            target:${java.version}
+spring: # 配置多实例 EUREKA SERVER
+    application:
+        name: microservice-discovery-eureka-service
+#---
+#spring:
+#    profiles: peer1
+#eureka:
+#    instantce:
+#        hostname:peer1
+#    client:
+#        serviceUrl:
+#            defaultZone: http://peer2:8762/eureka/
+#---
+#spring:
+#    profiles: peer2
+#eureka:
+#    instantce:
+#        hostname:peer2
+#    client:
+#        serviceUrl:
+#            defaultZone: http://peer1:8761/eureka/
